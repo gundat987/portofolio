@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Febriyan Nanda Saputra — Portfolio &amp; Curriculum Vitae</title>
+  <meta name="description" content="Portfolio &amp; Curriculum Vitae resmi Febriyan Nanda Saputra — AI Engineer, Web Developer, dan System Analyst (Cum Laude S1 Sistem Komputer Universitas Gunadarma).">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Febriyan Nanda Saputra — AI Engineer, Web Developer &amp; System Analyst">
+  <meta property="og:description" content="Rekam jejak pengembangan aplikasi enterprise (PT Altrak 1978), AI Agent workflows, sistem database PostgreSQL, dan kepemimpinan kompetisi robotika.">
+  <meta property="og:image" content="assets/images/altrak-display-portal.jpeg">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230F172A'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%23FFFFFF' font-family='monospace' font-weight='800' font-size='28'%3EFN%3C/text%3E%3C/svg%3E">
+  <script src="js/theme-init.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="bg-[#F8FAFC] text-slate-800 dark:bg-[#090D16] dark:text-slate-100 font-sans selection:bg-blue-600 selection:text-white relative overflow-x-hidden min-h-screen transition-colors duration-300">
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Subtle Background Grid -->
+  <div class="fixed inset-0 pointer-events-none z-0" aria-hidden="true">
+    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[900px] h-[450px] bg-gradient-to-b from-blue-100/60 via-sky-50/40 to-transparent dark:from-blue-600/10 dark:via-sky-500/5 blur-[100px] rounded-full"></div>
+    <div class="absolute inset-0 bg-grid-adaptive opacity-70 dark:opacity-50"></div>
+  </div>
+
+  <!-- FLOATING NAVIGATION BAR -->
+  <header class="sticky top-4 z-50 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="surface-nav border border-slate-200/90 dark:border-slate-800 rounded-2xl shadow-sm dark:shadow-lg dark:shadow-black/30 px-4 sm:px-5 py-3 flex items-center justify-between gap-4 transition-colors duration-300">
+      <!-- Brand Logo -->
+      <a class="flex items-center gap-3 group shrink-0" href="#hero">
+        <div class="w-10 h-10 rounded-xl bg-slate-900 dark:bg-blue-600 flex items-center justify-center font-mono font-extrabold text-white text-base tracking-tighter shadow-xs group-hover:scale-105 transition-transform duration-200 shrink-0">
+          FN
+        </div>
+        <div class="hidden sm:block">
+          <span class="text-sm font-bold text-slate-900 dark:text-slate-50 tracking-tight flex items-center gap-1.5 leading-tight whitespace-nowrap group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+            Febriyan Nanda Saputra
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0"></span>
+          </span>
+          <span class="block text-[11px] font-mono text-slate-500 dark:text-slate-400 whitespace-nowrap">AI · Web · System Analyst</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden xl:flex items-center gap-5 2xl:gap-6 text-[13px] font-semibold text-slate-600 dark:text-slate-300 whitespace-nowrap shrink-0" aria-label="Main Navigation">
+        <a class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-1 whitespace-nowrap" href="#tentang" data-i18n="nav_about">Tentang</a>
+        <a class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-1 whitespace-nowrap" href="#pengalaman" data-i18n="nav_experience">Pengalaman</a>
+        <a class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-1 whitespace-nowrap" href="#proyek" data-i18n="nav_projects">Proyek</a>
+        <a class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-1 flex items-center gap-1.5 whitespace-nowrap" href="#dokumentasi">
+          <span data-i18n="nav_activities">Aktivitas</span>
+          <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-blue-50 text-blue-700 border border-blue-200 dark:bg-blue-500/15 dark:text-blue-300 dark:border-blue-500/30">Live</span>
+        </a>
+        <a class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-1 whitespace-nowrap" href="#keahlian" data-i18n="nav_skills">Keahlian</a>
+        <a class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-1 whitespace-nowrap" href="#sertifikasi" data-i18n="nav_certs">Sertifikasi</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-2 sm:gap-2.5 shrink-0">
+        <div id="lang-toggle-wrap" class="inline-flex items-center p-1 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-xs font-mono font-semibold shrink-0">
+          <button id="btn-lang-id" type="button" onclick="window.setPortfolioLanguage('id')" class="px-2.5 py-1 rounded-lg transition-all duration-200 bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-xs font-bold">ID</button>
+          <button id="btn-lang-en" type="button" onclick="window.setPortfolioLanguage('en')" class="px-2.5 py-1 rounded-lg transition-all duration-200 text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white font-medium">EN</button>
+        </div>
+
+        <button id="theme-toggle" type="button" onclick="window.togglePortfolioTheme()" aria-label="Ubah ke Mode Gelap" class="w-9 h-9 rounded-xl bg-white hover:bg-slate-100 dark:bg-slate-900 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-amber-300 flex items-center justify-center transition-colors shadow-xs shrink-0">
+          <svg class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+          </svg>
+          <svg class="w-4 h-4 block dark:hidden text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          </svg>
+        </button>
+
+        <a class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-bold shadow-sm shadow-blue-600/20 active:scale-[0.98] transition-all duration-200 whitespace-nowrap shrink-0" download="CV_Febriyan_Nanda_Saputra.pdf" href="assets/docs/CV_Febriyan_Nanda_Saputra.pdf">
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
+          </svg>
+          <span data-i18n="nav_cv">Download CV</span>
+        </a>
+
+        <a class="hidden xl:inline-flex items-center justify-center px-3.5 py-2 rounded-xl bg-white hover:bg-slate-100 dark:bg-slate-900 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 text-xs sm:text-sm font-semibold transition-colors shadow-xs whitespace-nowrap shrink-0" href="#kontak" data-i18n="nav_contact">
+          Hubungi Saya
+        </a>
+
+        <button id="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle Navigation Menu" class="xl:hidden w-9 h-9 rounded-xl bg-white hover:bg-slate-100 dark:bg-slate-900 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 flex items-center justify-center transition-colors shrink-0">
+          <svg id="menu-icon-open" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg id="menu-icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden xl:hidden mt-2 surface-nav border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl p-4 space-y-2">
+      <nav class="flex flex-col space-y-1 text-sm font-semibold text-slate-700 dark:text-slate-200" aria-label="Mobile Navigation">
+        <a class="nav-link px-3 py-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#tentang" data-i18n="nav_about">Tentang</a>
+        <a class="nav-link px-3 py-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#pengalaman" data-i18n="nav_experience">Pengalaman</a>
+        <a class="nav-link px-3 py-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#proyek" data-i18n="nav_projects">Proyek</a>
+        <a class="nav-link px-3 py-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-between" href="#dokumentasi">
+          <span data-i18n="nav_activities">Aktivitas</span>
+          <span class="px-2 py-0.5 rounded text-[10px] bg-blue-50 text-blue-700 dark:bg-blue-500/20 dark:text-blue-300">Live</span>
+        </a>
+        <a class="nav-link px-3 py-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#keahlian" data-i18n="nav_skills">Keahlian</a>
+        <a class="nav-link px-3 py-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#sertifikasi" data-i18n="nav_certs">Sertifikasi</a>
+      </nav>
+      <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row gap-2">
+        <a class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold shadow-sm" download="CV_Febriyan_Nanda_Saputra.pdf" href="assets/docs/CV_Febriyan_Nanda_Saputra.pdf">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
+          </svg>
+          <span data-i18n="nav_cv">Download CV</span>
+        </a>
+        <a class="flex-1 inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-100 text-sm font-semibold" href="#kontak" data-i18n="nav_contact">
+          Hubungi Saya
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10">
+    <!-- HERO SECTION -->
+    <section class="pt-10 pb-20 sm:pt-14 sm:pb-24" id="hero">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          <!-- Hero Left Column -->
+          <div class="lg:col-span-7 space-y-7 text-left">
+            <div class="flex flex-wrap items-center gap-2.5">
+              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 dark:bg-blue-500/15 dark:border-blue-500/30 dark:text-blue-300 text-xs font-semibold">
+                <span class="flex h-2 w-2 relative">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                <span data-i18n="hero_badge_hire">Terbuka untuk peluang AI Engineer &amp; IT Specialist (Full-time / MT / Kontrak)</span>
+              </div>
+              <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-800 dark:bg-amber-500/15 dark:border-amber-500/30 dark:text-amber-300 text-xs font-medium">
+                <span data-i18n="hero_badge_gpa">🎓 Cum Laude (IPK 3.82) Gunadarma</span>
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <h1 class="text-4xl sm:text-6xl font-black text-slate-900 dark:text-slate-50 tracking-tight leading-[1.08]">
+                Febriyan Nanda <br class="hidden sm:block">
+                <span class="text-blue-600 dark:text-blue-400">Saputra</span>
+              </h1>
+              <p class="text-base sm:text-lg font-mono text-slate-600 dark:text-slate-300 font-semibold flex items-center gap-2 flex-wrap">
+                <span class="text-blue-600 dark:text-blue-400 font-bold">&gt;</span> AI Engineer • Web Developer • System Analyst
+              </p>
+            </div>
+
+            <p class="text-slate-600 dark:text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl font-normal" data-i18n="hero_desc">
+              Halo! Saya Febriyan Nanda Saputra, lulusan S1 Sistem Komputer <span class="text-slate-900 dark:text-white font-semibold">Universitas Gunadarma</span> (IPK 3.82). Saya bekerja sebagai AI Engineer, Web Developer, dan System Analyst. Berpengalaman dalam mengembangkan solusi cerdas dengan integrasi AI Agent menggunakan framework Antigravity, membangun aplikasi web skala produksi, mengelola database PostgreSQL/Supabase, serta merancang arsitektur sistem dari hulu ke hilir (Flowchart, DFD, SDLC). Pernah mengembangkan sistem psikotes berbasis web untuk rekrutmen di <span class="text-slate-900 dark:text-white font-semibold">PT Altrak 1978</span> dan aktif sebagai asisten laboratorium serta koordinator teknis kompetisi robotika.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-3.5 pt-2">
+              <a class="group inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-md shadow-blue-600/20 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200" download="CV_Febriyan_Nanda_Saputra.pdf" href="assets/docs/CV_Febriyan_Nanda_Saputra.pdf">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3"></path>
+                </svg>
+                <span data-i18n="hero_btn_cv">Download CV ATS-Friendly (PDF)</span>
+              </a>
+              <a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white hover:bg-slate-100 dark:bg-slate-900 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-100 font-semibold text-sm shadow-xs transition-all duration-200" href="#proyek">
+                <span data-i18n="hero_btn_proj">Lihat Karya &amp; Proyek</span>
+                <svg class="w-4 h-4 text-slate-500 dark:text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </a>
+              <a class="inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 text-emerald-800 dark:bg-emerald-500/15 dark:hover:bg-emerald-500/25 dark:border-emerald-500/30 dark:text-emerald-300 font-semibold text-sm transition-all" href="https://wa.me/6287872273539?text=Halo%20Febriyan,%20saya%20tertarik%20melihat%20portfolio%20Anda" rel="noopener noreferrer" target="_blank">
+                <svg class="w-4 h-4 text-emerald-600 dark:text-emerald-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.088.072.19.014.306-.058.115-.087.19-.174.289l-.261.302c-.087.087-.179.182-.077.357.101.174.45 1.745 1.583 2.13.145.049.278.076.388.037.135-.048.423-.491.536-.66.113-.17.227-.142.38-.085.153.057.97.457 1.137.54.167.083.278.125.32.197.042.072.042.417-.102.822z"></path></svg>
+                <span>WhatsApp</span>
+              </a>
+              <a class="inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-sky-50 hover:bg-sky-100 border border-sky-200 text-sky-800 dark:bg-sky-500/15 dark:hover:bg-sky-500/25 dark:border-sky-500/30 dark:text-sky-300 font-semibold text-sm transition-all" href="https://www.linkedin.com/in/febriyan-nanda-saputra/" rel="noopener noreferrer" target="_blank">
+                <svg class="w-4 h-4 text-sky-600 dark:text-sky-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+
+            <div class="pt-5 border-t border-slate-200 dark:border-slate-800 flex flex-wrap items-center gap-y-2.5 gap-x-6 text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-mono">
+              <span class="inline-flex items-center gap-2">
+                <svg class="w-4 h-4 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                <span data-i18n="meta_location">Bekasi, Jawa Barat</span>
+              </span>
+              <span class="inline-flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                +62 878-7227-3539
+              </span>
+              <span class="inline-flex items-center gap-2">
+                <svg class="w-4 h-4 text-sky-600 dark:text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                febriyandah1@gmail.com
+              </span>
+            </div>
+          </div>
+
+          <!-- Hero Right Column: Showcase Card -->
+          <div class="lg:col-span-5">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              <div class="relative surface-card rounded-2xl p-4 sm:p-5 shadow-lg">
+                <div class="flex items-center justify-between pb-3.5 mb-3.5 border-b border-slate-200 dark:border-slate-800">
+                  <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-rose-400 inline-block"></span>
+                    <span class="w-3 h-3 rounded-full bg-amber-400 inline-block"></span>
+                    <span class="w-3 h-3 rounded-full bg-emerald-400 inline-block"></span>
+                    <span class="text-[11px] font-mono text-slate-500 dark:text-slate-400 ml-2">production-env // pt-altrak-1978</span>
+                  </div>
+                  <div class="flex items-center gap-1.5 px-2 py-0.5 rounded bg-emerald-50 border border-emerald-200 text-emerald-700 dark:bg-emerald-500/15 dark:border-emerald-500/30 dark:text-emerald-300 text-[10px] font-mono font-semibold">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span>
+                    99.9% Uptime
+                  </div>
+                </div>
+
+                <div class="relative aspect-[3/4] rounded-xl overflow-hidden bg-slate-900 group">
+                  <img alt="Febriyan Nanda Saputra - Sosialisasi Portal Psikotes PT Altrak 1978" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="assets/images/altrak-display-portal.jpeg">
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/25 to-transparent"></div>
+                  <div class="absolute top-3 left-3 bg-white/95 dark:bg-slate-900/90 backdrop-blur-md border border-slate-200 dark:border-slate-700 text-blue-700 dark:text-blue-300 text-[11px] font-mono font-bold px-3 py-1 rounded-lg shadow-sm flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 animate-pulse"></span>
+                    Sistem Portal Psikotes Online — PT Altrak 1978
+                  </div>
+                  <div class="absolute bottom-4 left-4 right-4 text-white">
+                    <span class="px-2 py-0.5 rounded bg-blue-600 text-[10px] font-mono font-bold uppercase tracking-wider mb-2 inline-block shadow-sm">
+                      Full-Stack Architecture
+                    </span>
+                    <h3 class="font-extrabold text-lg sm:text-xl text-white leading-tight">
+                      Sistem Portal Psikotes Online
+                    </h3>
+                    <p class="text-xs text-slate-200 mt-1 line-clamp-2">
+                      SPA 12 Modul Ujian Terintegrasi PostgreSQL Supabase, Edge Function, &amp; Webcam Proctoring
+                    </p>
+                  </div>
+                </div>
+
+                <div class="mt-4 pt-3.5 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs font-mono">
+                  <div class="text-slate-500 dark:text-slate-400">
+                    Role: <span class="text-slate-900 dark:text-slate-100 font-semibold">Web Developer</span>
+                  </div>
+                  <div class="flex items-center gap-1.5 text-blue-700 dark:text-blue-400 font-semibold">
+                    <span>Node.js</span> • <span>PostgreSQL</span> • <span>Docker</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: TENTANG, BENTO GRID & PENDIDIKAN -->
+    <section class="py-20 bg-white dark:bg-slate-900/40 border-y border-slate-200 dark:border-slate-800 transition-colors duration-300" id="tentang">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div>
+            <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest font-mono" data-i18n="about_tag">01. PROFIL &amp; RINGKASAN</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-slate-50 mt-1" data-i18n="about_title">Latar Belakang &amp; Pengalaman</h2>
+          </div>
+          <p class="text-slate-600 dark:text-slate-400 text-sm max-w-md" data-i18n="about_sub">Fokus pada pengembangan aplikasi web, perancangan database relasional, dan analisis alur sistem teknis.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+          <!-- Bento 1 -->
+          <div class="reveal md:col-span-7 surface-card rounded-2xl p-7 sm:p-8 flex flex-col justify-between surface-card-hover">
+            <div>
+              <div class="w-11 h-11 rounded-xl bg-blue-50 border border-blue-200 text-blue-600 dark:bg-blue-500/15 dark:border-blue-500/30 dark:text-blue-400 flex items-center justify-center font-bold mb-5">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </div>
+              <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-50 mb-3" data-i18n="bento1_title">Kapabilitas AI Engineer &amp; System Analyst</h3>
+              <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed" data-i18n="bento1_desc">
+                Saya berfokus pada rekayasa kecerdasan buatan dan pemodelan sistem enterprise: memanfaatkan framework Antigravity untuk orkestrasi AI Agent mandiri dan alur kerja cerdas terotomasi, menerjemahkan kebutuhan operasional ke dalam diagram alir (Flowchart &amp; DFD), mengelola arsitektur database relasional (PostgreSQL &amp; Supabase), serta memimpin pengujian lapangan terpadu bersama pengguna.
+              </p>
+            </div>
+            <div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-mono">
+              <div class="p-3 rounded-lg bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700/80">
+                <div class="text-blue-700 dark:text-blue-400 font-bold">SDLC</div>
+                <div class="text-[11px] text-slate-500 dark:text-slate-400">Alur &amp; Testing</div>
+              </div>
+              <div class="p-3 rounded-lg bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700/80">
+                <div class="text-sky-700 dark:text-sky-400 font-bold">SQL / DB</div>
+                <div class="text-[11px] text-slate-500 dark:text-slate-400">Postgres &amp; MySQL</div>
+              </div>
+              <div class="p-3 rounded-lg bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700/80">
+                <div class="text-emerald-700 dark:text-emerald-400 font-bold">Pemodelan</div>
+                <div class="text-[11px] text-slate-500 dark:text-slate-400">Flowchart &amp; DFD</div>
+              </div>
+              <div class="p-3 rounded-lg bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700/80">
+                <div class="text-amber-700 dark:text-amber-400 font-bold">Hardware</div>
+                <div class="text-[11px] text-slate-500 dark:text-slate-400">ESP32 &amp; Arduino</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 2 -->
+          <div class="reveal md:col-span-5 surface-card rounded-2xl p-7 sm:p-8 flex flex-col justify-between surface-card-hover">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-2.5 py-1 rounded-md bg-amber-50 border border-amber-200 text-amber-800 dark:bg-amber-500/15 dark:border-amber-500/30 dark:text-amber-300 text-xs font-bold font-mono">
+                  Cum Laude Honor
+                </span>
+                <span class="text-xs font-mono text-slate-500 dark:text-slate-400">2022 – 2026</span>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-slate-50">Universitas Gunadarma</h3>
+              <p class="text-blue-600 dark:text-blue-400 font-semibold text-sm mt-0.5" data-i18n="bento2_degree">S1 Sistem Komputer (Sarjana Komputer)</p>
+              <div class="mt-6 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 flex items-center justify-between">
+                <div>
+                  <span class="text-[10px] font-mono text-slate-500 dark:text-slate-400 uppercase tracking-wider block font-semibold" data-i18n="bento2_gpa_label">IPK KELULUSAN</span>
+                  <div class="text-3xl font-extrabold text-slate-900 dark:text-white mt-0.5">
+                    3.82 <span class="text-sm font-normal text-slate-500 dark:text-slate-400">/ 4.00</span>
+                  </div>
+                </div>
+                <div class="h-10 w-10 rounded-full bg-emerald-100 border border-emerald-300 text-emerald-800 dark:bg-emerald-500/20 dark:border-emerald-500/30 dark:text-emerald-300 flex items-center justify-center font-bold text-xs">
+                  A+
+                </div>
+              </div>
+              <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm mt-4 leading-relaxed" data-i18n="bento2_focus">
+                Fokus riset &amp; studi: Arsitektur Perangkat Lunak, Jaringan &amp; Keamanan Sistem Komputer, Database Terdistribusi, serta Integrasi Hardware Embedded.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 font-mono">
+              <span data-i18n="bento2_status">Status: Sarjana Komputer (Cum Laude)</span>
+              <span class="text-emerald-700 dark:text-emerald-400 font-semibold" data-i18n="bento2_avail">Siap Kerja Langsung</span>
+            </div>
+          </div>
+
+          <!-- Bento 3: Metrik -->
+          <div class="reveal md:col-span-12 surface-card rounded-2xl p-6 sm:p-7">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+              <div class="space-y-1">
+                <span class="text-xs font-mono text-slate-500 dark:text-slate-400 uppercase font-semibold" data-i18n="metric1_label">Modul Tes</span>
+                <div class="text-3xl font-black text-slate-900 dark:text-white flex items-center gap-2">
+                  12 <span class="text-blue-600 dark:text-blue-400 text-base font-semibold" data-i18n="metric1_unit">Modul</span>
+                </div>
+                <p class="text-[11px] text-slate-500 dark:text-slate-400">IST, CFIT, APM, TIU, Pauli, DISC, PAPI, dll.</p>
+              </div>
+              <div class="space-y-1">
+                <span class="text-xs font-mono text-slate-500 dark:text-slate-400 uppercase font-semibold" data-i18n="metric2_label">Jangkauan Peserta</span>
+                <div class="text-3xl font-black text-slate-900 dark:text-white flex items-center gap-2">
+                  100+ <span class="text-sky-600 dark:text-sky-400 text-base font-semibold" data-i18n="metric2_unit">Kandidat/Peserta</span>
+                </div>
+                <p class="text-[11px] text-slate-500 dark:text-slate-400" data-i18n="metric2_desc">Kompetisi robotik &amp; seleksi rekrutmen live</p>
+              </div>
+              <div class="space-y-1">
+                <span class="text-xs font-mono text-slate-500 dark:text-slate-400 uppercase font-semibold" data-i18n="metric3_label">Kecepatan Respon</span>
+                <div class="text-3xl font-black text-slate-900 dark:text-white flex items-center gap-2">
+                  &lt; 150 <span class="text-emerald-600 dark:text-emerald-400 text-base font-semibold">ms</span>
+                </div>
+                <p class="text-[11px] text-slate-500 dark:text-slate-400" data-i18n="metric3_desc">Kalkulasi skor otomatis via server-side PostgreSQL</p>
+              </div>
+              <div class="space-y-1">
+                <span class="text-xs font-mono text-slate-500 dark:text-slate-400 uppercase font-semibold" data-i18n="metric4_label">Predikat Akademik</span>
+                <div class="text-3xl font-black text-slate-900 dark:text-white flex items-center gap-2">
+                  100% <span class="text-amber-600 dark:text-amber-400 text-base font-semibold" data-i18n="metric4_unit">Tepat Waktu</span>
+                </div>
+                <p class="text-[11px] text-slate-500 dark:text-slate-400" data-i18n="metric4_desc">Lulus dengan predikat kehormatan Cum Laude</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: PENGALAMAN KERJA -->
+    <section class="py-20 sm:py-28" id="pengalaman">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal max-w-3xl mb-14">
+          <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest font-mono" data-i18n="exp_tag">02. PENGALAMAN KERJA</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-slate-50 mt-1" data-i18n="exp_title">Pengalaman Kerja &amp; Organisasi</h2>
+          <p class="text-slate-600 dark:text-slate-400 text-base mt-2" data-i18n="exp_sub">Pengalaman membangun aplikasi pendukung operasional rekrutmen perusahaan dan mengelola kegiatan teknis laboratorium kampus.</p>
+        </div>
+
+        <div class="space-y-8">
+          <!-- Experience 1: Professional Work -->
+          <div class="reveal surface-card rounded-2xl p-7 sm:p-9 border-l-4 border-l-blue-600 dark:border-l-blue-500 surface-card-hover">
+            <div class="flex flex-col md:flex-row md:items-start justify-between pb-6 border-b border-slate-200 dark:border-slate-800 gap-4">
+              <div>
+                <div class="flex flex-wrap items-center gap-2.5">
+                  <span class="px-2.5 py-0.5 rounded-md bg-blue-600 text-white text-[11px] font-mono font-bold uppercase tracking-wider" data-i18n="exp1_type">
+                    Pengalaman Kerja
+                  </span>
+                  <h3 class="text-2xl font-black text-slate-900 dark:text-white">PT Altrak 1978</h3>
+                  <span class="px-2.5 py-0.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 dark:bg-blue-500/15 dark:border-blue-500/30 dark:text-blue-300 text-xs font-mono font-semibold">
+                    Major Heavy Equipment Distributor
+                  </span>
+                </div>
+                <p class="text-base font-bold text-blue-600 dark:text-blue-400 mt-1.5" data-i18n="exp1_role">Web Developer &amp; System Analyst (Proyek Rekrutmen)</p>
+              </div>
+              <div class="text-xs font-mono text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 px-3.5 py-2 rounded-xl border border-slate-200 dark:border-slate-700 w-fit" data-i18n="exp1_date">
+                2026 – Sekarang • Jakarta
+              </div>
+            </div>
+
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80">
+                <div class="flex items-center gap-2 text-slate-900 dark:text-white font-bold text-sm mb-1.5">
+                  <span class="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400"></span>
+                  <span data-i18n="exp1_h1_title">Pengembangan Web Psikotes (12 Modul Tes)</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="exp1_h1_desc">Membangun aplikasi web psikotes dengan 12 sub-tes (IST, CFIT, APM, TIU, Pauli, DISC, PAPI, EPPS, MBTI, MSDT, DASS, Grafis) serta dashboard pemantauan peserta untuk tim HRD.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80">
+                <div class="flex items-center gap-2 text-slate-900 dark:text-white font-bold text-sm mb-1.5">
+                  <span class="w-2 h-2 rounded-full bg-sky-600 dark:bg-sky-400"></span>
+                  <span data-i18n="exp1_h2_title">Perancangan Database &amp; Skoring Otomatis</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="exp1_h2_desc">Merancang skema database relasional pada PostgreSQL (Supabase) dan membuat scoring function di sisi database agar kalkulasi nilai tes berjalan cepat dan tidak dapat dimanipulasi dari browser.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80">
+                <div class="flex items-center gap-2 text-slate-900 dark:text-white font-bold text-sm mb-1.5">
+                  <span class="w-2 h-2 rounded-full bg-emerald-600 dark:bg-emerald-400"></span>
+                  <span data-i18n="exp1_h3_title">Fitur Proctoring &amp; Pengaturan Akses Data</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="exp1_h3_desc">Menerapkan proteksi data peserta menggunakan Row Level Security (RLS), integrasi penyimpanan foto dokumen, serta modul pengawasan kamera otomatis selama tes berlangsung.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80">
+                <div class="flex items-center gap-2 text-slate-900 dark:text-white font-bold text-sm mb-1.5">
+                  <span class="w-2 h-2 rounded-full bg-indigo-600 dark:bg-indigo-400"></span>
+                  <span data-i18n="exp1_h4_title">Uji Coba Langsung Bersama Pengguna</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="exp1_h4_desc">Mendampingi pelaksanaan uji coba aplikasi langsung di ruang meeting bersama tim HRD dan kandidat, mengumpulkan masukan pengguna, serta memperbaiki kendala tampilan dan koneksi.</p>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-slate-200 dark:border-slate-800 flex flex-wrap gap-2 text-xs font-mono">
+              <span class="px-2.5 py-1 rounded-md bg-blue-50 text-blue-700 border border-blue-200 dark:bg-blue-500/15 dark:text-blue-300 dark:border-blue-500/30 font-semibold">PostgreSQL</span>
+              <span class="px-2.5 py-1 rounded-md bg-sky-50 text-sky-700 border border-sky-200 dark:bg-sky-500/15 dark:text-sky-300 dark:border-sky-500/30 font-semibold">Supabase RPC &amp; RLS</span>
+              <span class="px-2.5 py-1 rounded-md bg-indigo-50 text-indigo-700 border border-indigo-200 dark:bg-indigo-500/15 dark:text-indigo-300 dark:border-indigo-500/30 font-semibold">Node.js</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 border border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700">JavaScript SPA</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 border border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700">HTML5 / CSS3</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 border border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700">Chart.js</span>
+              <span class="px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-700 border border-emerald-200 dark:bg-emerald-500/15 dark:text-emerald-300 dark:border-emerald-500/30 font-semibold">Docker</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 border border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700">Vercel</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 border border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700">Git &amp; GitHub</span>
+              <span class="px-2.5 py-1 rounded-md bg-blue-50 text-blue-700 border border-blue-200 dark:bg-blue-500/15 dark:text-blue-300 dark:border-blue-500/30 font-semibold">GitHub Actions</span>
+            </div>
+          </div>
+
+          <!-- Experience 2: Campus & Lab (2023–2026) -->
+          <div class="reveal surface-card rounded-2xl p-7 sm:p-9 surface-card-hover">
+            <div class="flex flex-col md:flex-row md:items-start justify-between pb-6 border-b border-slate-200 dark:border-slate-800 gap-4">
+              <div>
+                <div class="flex flex-wrap items-center gap-2.5">
+                  <span class="px-2.5 py-0.5 rounded-md bg-amber-100 text-amber-800 border border-amber-200 dark:bg-amber-500/20 dark:text-amber-300 dark:border-amber-500/30 text-[11px] font-mono font-bold uppercase tracking-wider" data-i18n="exp2_type">
+                    Masa Kuliah &amp; Lab
+                  </span>
+                  <h3 class="text-2xl font-black text-slate-900 dark:text-white">Laboratorium Robotik &amp; Multimedia</h3>
+                  <span class="px-2.5 py-0.5 rounded-full bg-amber-50 border border-amber-200 text-amber-800 dark:bg-amber-500/15 dark:border-amber-500/30 dark:text-amber-300 text-xs font-mono font-semibold">
+                    Universitas Gunadarma
+                  </span>
+                </div>
+                <p class="text-base font-bold text-amber-600 dark:text-amber-400 mt-1.5" data-i18n="exp2_role">Asisten Laboratorium &amp; Koordinator Teknis Lomba (ESC)</p>
+              </div>
+              <div class="text-xs font-mono text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 px-3.5 py-2 rounded-xl border border-slate-200 dark:border-slate-700 w-fit" data-i18n="exp2_date">
+                2023 – 2026 • Depok &amp; Bekasi
+              </div>
+            </div>
+
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80">
+                <div class="flex items-center gap-2 text-slate-900 dark:text-white font-bold text-sm mb-1.5">
+                  <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+                  <span data-i18n="exp2_h1_title">Pendampingan Praktikum Mahasiswa</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="exp2_h1_desc">Mengelola alur pengembangan sistem praktikum dari perancangan arsitektur awal, perakitan perangkat, testing kalibrasi, hingga dokumentasi komprehensif bagi ratusan mahasiswa praktikan.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80">
+                <div class="flex items-center gap-2 text-slate-900 dark:text-white font-bold text-sm mb-1.5">
+                  <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+                  <span data-i18n="exp2_h2_title">Penyusunan Modul &amp; Flowchart Alur</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="exp2_h2_desc">Menyusun diagram alir logika program, diagram blok arsitektur perangkat keras, dan SOP operasional modul embedded system berstandar akademik.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80">
+                <div class="flex items-center gap-2 text-slate-900 dark:text-white font-bold text-sm mb-1.5">
+                  <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+                  <span data-i18n="exp2_h3_title">Proyek Lab: K6, KiCad PCB &amp; Raspberry Pi</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="exp2_h3_desc">Mengembangkan robot OmniWheels berbasis Raspberry Pi (Flask &amp; OpenCV face recognition), sistem sensor IoT ESP32 &amp; desain PCB KiCad (Proyek K6), serta robot Wall Follower dan kendali nirkabel IMU.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80">
+                <div class="flex items-center gap-2 text-slate-900 dark:text-white font-bold text-sm mb-1.5">
+                  <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+                  <span data-i18n="exp2_h4_title">Koordinator Teknis Lapangan (Lomba ESC)</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="exp2_h4_desc">Bertanggung jawab sebagai pimpinan teknis arena kompetisi, memimpin sesi evaluasi dan koordinasi parameter juri, serta briefing teknis kepada seluruh delegasi peserta.</p>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-slate-200 dark:border-slate-800 flex flex-wrap gap-2 text-xs font-mono">
+              <span class="px-2.5 py-1 rounded-md bg-amber-50 text-amber-800 border border-amber-200 dark:bg-amber-500/15 dark:text-amber-300 dark:border-amber-500/30 font-semibold">Draw.io Architecture</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 border border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700">ESP32 &amp; Arduino</span>
+              <span class="px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-700 border border-emerald-200 dark:bg-emerald-500/15 dark:text-emerald-300 dark:border-emerald-500/30 font-semibold">Raspberry Pi (OpenCV / Flask)</span>
+              <span class="px-2.5 py-1 rounded-md bg-indigo-50 text-indigo-700 border border-indigo-200 dark:bg-indigo-500/15 dark:text-indigo-300 dark:border-indigo-500/30 font-semibold">KiCad PCB &amp; K6 IoT</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 border border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700">Wall Follower &amp; IMU</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 border border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700">Leadership</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PROYEK UNGGULAN -->
+    <section class="py-20 sm:py-28 bg-white dark:bg-slate-900/40 border-t border-slate-200 dark:border-slate-800 transition-colors duration-300" id="proyek">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal max-w-3xl mb-10">
+          <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest font-mono" data-i18n="proj_tag">03. PROYEK UNGGULAN</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-slate-50 mt-1" data-i18n="proj_title">Proyek yang Pernah Dikerjakan</h2>
+          <p class="text-slate-600 dark:text-slate-400 text-base mt-2" data-i18n="proj_sub">Beberapa aplikasi dan sistem yang pernah saya bangun, baik untuk operasional perusahaan maupun kebutuhan riset/akademis.</p>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="reveal mb-10" id="project-filters-container">
+          <div class="flex items-center gap-2 overflow-x-auto pb-2 sm:pb-0">
+            <button type="button" data-filter="all" class="filter-pill inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-900 text-white dark:bg-blue-600 dark:text-white shadow-sm">
+              <span data-i18n="filter_all">Semua Rumpun IT</span>
+              <span class="filter-count px-1.5 py-0.5 rounded-md text-[10px] font-mono bg-white/20 text-white">7</span>
+            </button>
+            <button type="button" data-filter="software-engineering" class="filter-pill inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 dark:bg-slate-800/80 dark:hover:bg-slate-800 dark:text-slate-300 dark:border-slate-700">
+              <span data-i18n="filter_se">Software Engineering</span>
+              <span class="filter-count px-1.5 py-0.5 rounded-md text-[10px] font-mono bg-slate-200/80 text-slate-700 dark:bg-slate-700 dark:text-slate-300">5</span>
+            </button>
+            <button type="button" data-filter="system-analysis" class="filter-pill inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 dark:bg-slate-800/80 dark:hover:bg-slate-800 dark:text-slate-300 dark:border-slate-700">
+              <span data-i18n="filter_sa">System Analysis</span>
+              <span class="filter-count px-1.5 py-0.5 rounded-md text-[10px] font-mono bg-slate-200/80 text-slate-700 dark:bg-slate-700 dark:text-slate-300">4</span>
+            </button>
+            <button type="button" data-filter="data-analytics" class="filter-pill inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 dark:bg-slate-800/80 dark:hover:bg-slate-800 dark:text-slate-300 dark:border-slate-700">
+              <span data-i18n="filter_da">Data &amp; Analytics</span>
+              <span class="filter-count px-1.5 py-0.5 rounded-md text-[10px] font-mono bg-slate-200/80 text-slate-700 dark:bg-slate-700 dark:text-slate-300">3</span>
+            </button>
+            <button type="button" data-filter="iot-hardware" class="filter-pill inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 dark:bg-slate-800/80 dark:hover:bg-slate-800 dark:text-slate-300 dark:border-slate-700">
+              <span data-i18n="filter_iot">IoT &amp; Hardware</span>
+              <span class="filter-count px-1.5 py-0.5 rounded-md text-[10px] font-mono bg-slate-200/80 text-slate-700 dark:bg-slate-700 dark:text-slate-300">5</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- GROUP 1: PENGALAMAN KERJA & PRODUKSI (UTAMA) -->
+        <div class="mb-14">
+          <div class="reveal flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 mb-6 border-b border-slate-200 dark:border-slate-800">
+            <div class="flex items-center gap-3">
+              <span class="px-2.5 py-1 rounded-lg bg-blue-600 text-white text-xs font-mono font-bold">01</span>
+              <div>
+                <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white" data-i18n="proj_g1_title">Pengalaman Kerja &amp; Sistem Produksi (Utama)</h3>
+                <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400" data-i18n="proj_g1_sub">Aplikasi web skala produksi di PT Altrak 1978 dan sistem telemetri live TrackingMBG.id.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+            <!-- Project 1: Flagship PT Altrak 1978 -->
+            <div class="reveal surface-card rounded-2xl overflow-hidden border-l-4 border-l-blue-600 dark:border-l-blue-500 surface-card-hover flex flex-col justify-between lg:col-span-2 project-card-item" data-categories="software-engineering,system-analysis,data-analytics">
+              <div class="grid grid-cols-1 lg:grid-cols-12">
+                <div class="relative aspect-video lg:aspect-auto lg:col-span-5 bg-slate-900 overflow-hidden group">
+                  <img alt="Portal Psikotes Online Altrak 1978" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" src="assets/images/altrak-display-portal.jpeg">
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-900/20 to-transparent"></div>
+                  <div class="absolute top-3 left-3 bg-white/95 dark:bg-slate-900/90 backdrop-blur-md px-3 py-1 rounded-md text-xs font-mono font-bold text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 shadow-sm">
+                    Flagship • PT Altrak 1978
+                  </div>
+                  <div class="absolute bottom-3 right-3 bg-emerald-600/95 text-white px-2.5 py-0.5 rounded text-[11px] font-mono font-semibold shadow-sm">
+                    Active Production
+                  </div>
+                </div>
+                <div class="lg:col-span-7 flex flex-col justify-between">
+                  <div class="p-6 sm:p-8">
+                    <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
+                      <span class="text-xs font-bold font-mono text-blue-600 dark:text-blue-400 uppercase">Role: Web / Full-Stack Developer</span>
+                      <span class="text-xs font-mono text-slate-500 dark:text-slate-400">PT Altrak 1978 (2026)</span>
+                    </div>
+                    <h3 class="text-2xl font-black text-slate-900 dark:text-white mb-3" data-i18n="proj1_title">Portal Psikotes Online &amp; Rekrutmen HRD</h3>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-5" data-i18n="proj1_desc">
+                      Platform rekrutmen produksi dengan <span class="text-slate-900 dark:text-white font-semibold">12 modul tes terpadu</span> (IST, CFIT, APM, TIU, Pauli, DISC, PAPI, EPPS, MBTI, MSDT, DASS, Grafis). Dilengkapi webcam proctoring otomatis, skoring server-side PostgreSQL RPC, dan dashboard analitik HRD.
+                    </p>
+                    <div class="grid grid-cols-2 gap-2 text-xs text-slate-700 dark:text-slate-300 font-mono">
+                      <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-600 dark:bg-blue-400"></span>12 Modul Psikotes Live</span>
+                      <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-sky-600 dark:bg-sky-400"></span>Postgres RPC &amp; RLS</span>
+                      <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600 dark:bg-emerald-400"></span>Webcam Proctoring</span>
+                      <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-600 dark:bg-amber-400"></span>HRD Analytic Dashboard</span>
+                    </div>
+                  </div>
+                  <div class="px-6 sm:px-8 py-4 border-t border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-950/50">
+                    <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+                      <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-blue-700 dark:bg-slate-800 dark:border-slate-700 dark:text-blue-300 font-medium">JavaScript SPA</span>
+                      <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-300">HTML5 / CSS3</span>
+                      <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-sky-700 dark:bg-slate-800 dark:border-slate-700 dark:text-sky-300 font-medium">Supabase PostgreSQL</span>
+                      <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-indigo-700 dark:bg-slate-800 dark:border-slate-700 dark:text-indigo-300 font-medium">Node.js</span>
+                      <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-emerald-700 dark:bg-slate-800 dark:border-slate-700 dark:text-emerald-300 font-medium">Docker &amp; Vercel</span>
+                      <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-300">Git &amp; GitHub</span>
+                      <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-blue-700 dark:bg-slate-800 dark:border-slate-700 dark:text-blue-300 font-medium">GitHub Actions</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3: PT Altrak 1978 Analytics -->
+            <div class="reveal project-card-item surface-card rounded-2xl overflow-hidden surface-card-hover flex flex-col justify-between" data-categories="data-analytics,software-engineering">
+              <div>
+                <div class="p-6 sm:p-7 border-b border-slate-200 dark:border-slate-800 bg-slate-50/80 dark:bg-slate-800/50 flex flex-col justify-between gap-3">
+                  <div class="flex items-center justify-between flex-wrap gap-2">
+                    <div class="flex items-center gap-2">
+                      <div class="w-9 h-9 rounded-xl bg-blue-50 border border-blue-200 text-blue-600 dark:bg-blue-500/15 dark:border-blue-500/30 dark:text-blue-400 flex items-center justify-center font-bold">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                      </div>
+                      <span class="px-2.5 py-1 rounded-md bg-blue-50 border border-blue-200 text-blue-700 dark:bg-blue-500/15 dark:border-blue-500/30 dark:text-blue-300 text-xs font-mono font-bold">Data &amp; BI Analytics</span>
+                    </div>
+                    <span class="font-mono text-xs text-blue-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-500/15 px-2.5 py-1 rounded-md border border-blue-200 dark:border-blue-500/30 font-semibold">
+                      &lt; 150ms Query
+                    </span>
+                  </div>
+                </div>
+                <div class="p-6 sm:p-7">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold font-mono text-blue-600 dark:text-blue-400 uppercase">Role: Data Analyst &amp; Full-Stack</span>
+                    <span class="text-xs font-mono text-slate-500 dark:text-slate-400">PT Altrak 1978</span>
+                  </div>
+                  <h3 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white mb-2.5" data-i18n="proj3_title">Executive Analytics &amp; Data Warehousing Dashboard</h3>
+                  <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-5" data-i18n="proj3_desc">
+                    Pipeline analitik evaluasi psikometri multidimensi dengan agregasi query PostgreSQL, normalisasi skor kandidat, visualisasi radar kompetensi, dan ekspor laporan PDF otomatis.
+                  </p>
+                  <div class="grid grid-cols-2 gap-2 text-xs text-slate-700 dark:text-slate-300 font-mono">
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-600 dark:bg-blue-400"></span>Star-Schema DB</span>
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-sky-600 dark:bg-sky-400"></span>Radar &amp; Kuantil UI</span>
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600 dark:bg-emerald-400"></span>RPC Aggregations</span>
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-600 dark:bg-amber-400"></span>Auto PDF Report</span>
+                  </div>
+                </div>
+              </div>
+              <div class="px-6 sm:px-7 py-4 border-t border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-950/50">
+                <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-blue-700 dark:bg-slate-800 dark:border-slate-700 dark:text-blue-300 font-medium">PostgreSQL</span>
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-sky-700 dark:bg-slate-800 dark:border-slate-700 dark:text-sky-300 font-medium">Python</span>
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-300">Chart.js</span>
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-emerald-700 dark:bg-slate-800 dark:border-slate-700 dark:text-emerald-300 font-medium">RPC Procedures</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2: TrackingMBG.id -->
+            <div class="reveal surface-card rounded-2xl overflow-hidden surface-card-hover flex flex-col justify-between project-card-item" data-categories="iot-hardware,system-analysis,software-engineering">
+              <div>
+                <div class="relative aspect-[16/7] bg-slate-900 overflow-hidden group">
+                  <img alt="Dashboard TrackingMBG.id - Monitoring Pengiriman Makanan Bergizi Real-time" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" src="assets/images/mbg-dashboard-ui.png">
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-900/15 to-transparent"></div>
+                  <div class="absolute top-3 left-3 bg-white/95 dark:bg-slate-900/90 backdrop-blur-md px-3 py-1 rounded-md text-xs font-mono font-bold text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 shadow-sm">
+                    IoT &amp; Telemetry Project
+                  </div>
+                  <div class="absolute bottom-3 right-3 bg-emerald-600/95 text-white px-2.5 py-0.5 rounded text-[11px] font-mono font-semibold shadow-sm flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>Live GPS Stream
+                  </div>
+                </div>
+                <div class="p-6 sm:p-7">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold font-mono text-sky-600 dark:text-sky-400 uppercase">Role: System Analyst &amp; Hardware Lead</span>
+                    <span class="text-xs font-mono text-slate-500 dark:text-slate-400">TrackingMBG.id</span>
+                  </div>
+                  <h3 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white mb-2.5" data-i18n="proj2_title">Monitoring &amp; Tracking Logistik (Tracking MBG)</h3>
+                  <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-5" data-i18n="proj2_desc">
+                    Sistem pengawasan logistik rantai dingin berbasis IoT: pelacakan koordinat GPS NEO-6M, telemetri suhu DHT21, validasi driver RFID RC522, dan arsitektur REST API ke dashboard live.
+                  </p>
+                  <div class="grid grid-cols-2 gap-2 text-xs text-slate-700 dark:text-slate-300 font-mono">
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-sky-600 dark:bg-sky-400"></span>GPS NEO-6M</span>
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-600 dark:bg-blue-400"></span>DHT21 Telemetry</span>
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600 dark:bg-emerald-400"></span>RFID RC522 Auth</span>
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-600 dark:bg-amber-400"></span>REST API &amp; DFD</span>
+                  </div>
+                </div>
+              </div>
+              <div class="px-6 sm:px-7 py-4 border-t border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-950/50">
+                <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-sky-700 dark:bg-slate-800 dark:border-slate-700 dark:text-sky-300 font-medium">ESP32 &amp; DHT21</span>
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-blue-700 dark:bg-slate-800 dark:border-slate-700 dark:text-blue-300 font-medium">GPS NEO-6M</span>
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-emerald-700 dark:bg-slate-800 dark:border-slate-700 dark:text-emerald-300 font-medium">RFID RC522</span>
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-amber-700 dark:bg-slate-800 dark:border-slate-700 dark:text-amber-300 font-medium">REST API &amp; Vercel</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GROUP 2: PROYEK MASA KULIAH, LAB ROBOTIKA & SKRIPSI (2022–2026) -->
+        <div>
+          <div class="reveal flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 mb-6 border-b border-slate-200 dark:border-slate-800">
+            <div class="flex items-center gap-3">
+              <span class="px-2.5 py-1 rounded-lg bg-amber-500 text-white text-xs font-mono font-bold">02</span>
+              <div>
+                <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white" data-i18n="proj_g2_title">Masa Kuliah, Lab Robotika &amp; Skripsi (2022–2026)</h3>
+                <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400" data-i18n="proj_g2_sub">Riset tugas akhir IoT Fuzzy Logic serta proyek embedded, PCB KiCad, dan Raspberry Pi di Lab Robotik.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+            <!-- Project 5: Skripsi Smart Home Fuzzy Logic -->
+            <div class="reveal project-card-item surface-card rounded-2xl overflow-hidden surface-card-hover flex flex-col justify-between" data-categories="iot-hardware,system-analysis,data-analytics">
+              <div>
+                <div class="p-6 sm:p-7 border-b border-slate-200 dark:border-slate-800 bg-slate-50/80 dark:bg-slate-800/50 flex items-center justify-between flex-wrap gap-2">
+                  <div class="flex items-center gap-2">
+                    <div class="w-9 h-9 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-600 dark:bg-emerald-500/15 dark:border-emerald-500/30 dark:text-emerald-400 flex items-center justify-center font-bold">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    </div>
+                    <span class="px-2.5 py-1 rounded-md bg-emerald-50 border border-emerald-200 text-emerald-700 dark:bg-emerald-500/15 dark:border-emerald-500/30 dark:text-emerald-300 text-xs font-mono font-bold">Thesis / Skripsi (2026)</span>
+                  </div>
+                  <span class="font-mono text-xs text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-500/15 px-2.5 py-1 rounded-md border border-emerald-200 dark:border-emerald-500/30 font-semibold">
+                    Fuzzy Logic Mamdani
+                  </span>
+                </div>
+                <div class="p-6 sm:p-7">
+                  <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
+                    <span class="text-xs font-bold font-mono text-emerald-700 dark:text-emerald-400 uppercase">Role: Researcher &amp; Embedded Dev</span>
+                    <span class="text-xs font-mono text-slate-500 dark:text-slate-400">Universitas Gunadarma</span>
+                  </div>
+                  <h3 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white mb-2.5" data-i18n="proj5_title">Prototipe Keamanan Ruangan IoT Smart Home &amp; Fuzzy Logic</h3>
+                  <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-5" data-i18n="proj5_desc">
+                    Skripsi S1 (2026): sistem keamanan Wemos D1 R1 dengan Fuzzy Logic Mamdani (Centroid) untuk status Aman/Waspada/Bahaya. Teruji pada RFID (0–3 cm), MQ-2 (12–2776 PPM), DHT21 (21,2–42,5°C), aktuator servo/relay, dan Blynk IoT.
+                  </p>
+                  <div class="grid grid-cols-2 gap-2 text-xs text-slate-700 dark:text-slate-300 font-mono">
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600 dark:bg-emerald-400"></span>Mamdani &amp; Centroid</span>
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-600 dark:bg-blue-400"></span>MQ-2 &amp; DHT21</span>
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-sky-600 dark:bg-sky-400"></span>RFID MFRC522 (0–3 cm)</span>
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-600 dark:bg-amber-400"></span>Servo, Relay &amp; Blynk</span>
+                  </div>
+                </div>
+              </div>
+              <div class="px-6 sm:px-7 py-4 border-t border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-950/50">
+                <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-emerald-700 dark:bg-slate-800 dark:border-slate-700 dark:text-emerald-300 font-medium">Wemos D1 R1</span>
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-blue-700 dark:bg-slate-800 dark:border-slate-700 dark:text-blue-300 font-medium">Fuzzy Mamdani</span>
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-sky-700 dark:bg-slate-800 dark:border-slate-700 dark:text-sky-300 font-medium">DHT21 &amp; MQ-2</span>
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-amber-800 dark:bg-slate-800 dark:border-slate-700 dark:text-amber-300 font-medium">Blynk IoT</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 6: Raspberry Pi OmniWheels Robot -->
+            <div class="reveal project-card-item surface-card rounded-2xl overflow-hidden surface-card-hover flex flex-col justify-between" data-categories="iot-hardware,software-engineering">
+              <div>
+                <div class="relative aspect-[16/7] bg-white border-b border-slate-200 dark:border-slate-800 overflow-hidden group">
+                  <img alt="Skematik Robot OmniWheels Berbasis Raspberry Pi" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-700" src="assets/images/omniwheels-schematic.jpg">
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none"></div>
+                  <div class="absolute top-3 left-3 bg-white/95 dark:bg-slate-900/90 backdrop-blur-md px-3 py-1 rounded-md text-xs font-mono font-bold text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 shadow-sm">
+                    Robotics &amp; Vision
+                  </div>
+                  <div class="absolute bottom-3 right-3 bg-emerald-600/95 text-white px-2.5 py-0.5 rounded text-[11px] font-mono font-semibold shadow-sm">
+                    Raspberry Pi OS
+                  </div>
+                </div>
+                <div class="p-6 sm:p-7">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold font-mono text-emerald-700 dark:text-emerald-400 uppercase">Role: Embedded &amp; Vision Dev</span>
+                    <span class="text-xs font-mono text-slate-500 dark:text-slate-400">Lab Robotik (2023–2026)</span>
+                  </div>
+                  <h3 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white mb-2.5" data-i18n="proj6_title">Robot OmniWheels Berbasis Raspberry Pi &amp; OpenCV</h3>
+                  <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-5" data-i18n="proj6_desc">
+                    Robot 3-roda OmniWheels berbasis Raspberry Pi dengan web controller Flask, live video stream, pengenalan wajah OpenCV (LBPH &amp; Haar Cascade), dan kontrol motor via RPi.GPIO.
+                  </p>
+                  <div class="grid grid-cols-2 gap-2 text-xs text-slate-700 dark:text-slate-300 font-mono">
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600 dark:bg-emerald-400"></span>Flask Web Controller</span>
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-600 dark:bg-blue-400"></span>OpenCV Face Recog</span>
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-sky-600 dark:bg-sky-400"></span>3-Motor Omni</span>
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-600 dark:bg-amber-400"></span>Headless SSH/WiFi</span>
+                  </div>
+                </div>
+              </div>
+              <div class="px-6 sm:px-7 py-4 border-t border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-950/50">
+                <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-emerald-700 dark:bg-slate-800 dark:border-slate-700 dark:text-emerald-300 font-medium">Raspberry Pi</span>
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-blue-700 dark:bg-slate-800 dark:border-slate-700 dark:text-blue-300 font-medium">Python &amp; Flask</span>
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-sky-700 dark:bg-slate-800 dark:border-slate-700 dark:text-sky-300 font-medium">OpenCV (LBPH)</span>
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-300">RPi.GPIO</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 7: K6 IoT Monitoring & KiCad PCB -->
+            <div class="reveal project-card-item surface-card rounded-2xl overflow-hidden surface-card-hover flex flex-col justify-between" data-categories="iot-hardware,software-engineering">
+              <div>
+                <div class="relative aspect-[16/7] bg-white border-b border-slate-200 dark:border-slate-800 overflow-hidden group">
+                  <img alt="Layout PCB Sensor Analog Proyek K6 KiCad" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-700" src="assets/images/k6-pcb-layout.svg">
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none"></div>
+                  <div class="absolute top-3 left-3 bg-white/95 dark:bg-slate-900/90 backdrop-blur-md px-3 py-1 rounded-md text-xs font-mono font-bold text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 shadow-sm">
+                    PCB &amp; IoT Firmware
+                  </div>
+                  <div class="absolute bottom-3 right-3 bg-indigo-600/95 text-white px-2.5 py-0.5 rounded text-[11px] font-mono font-semibold shadow-sm">
+                    KiCad &amp; ESP32
+                  </div>
+                </div>
+                <div class="p-6 sm:p-7">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold font-mono text-indigo-700 dark:text-indigo-400 uppercase">Role: Hardware &amp; IoT Engineer</span>
+                    <span class="text-xs font-mono text-slate-500 dark:text-slate-400">Proyek K6 • Lab Robotik</span>
+                  </div>
+                  <h3 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white mb-2.5" data-i18n="proj7_title">Proyek K6: Sistem IoT Sensor Lingkungan &amp; PCB KiCad</h3>
+                  <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-5" data-i18n="proj7_desc">
+                    Desain skematik &amp; layout PCB sensor analog di KiCad hingga Gerber CNC, dipadukan firmware ESP32 (AsyncWebServer &amp; LittleFS) untuk sensor DHT22, soil ADC, relay, dan ThingSpeak.
+                  </p>
+                  <div class="grid grid-cols-2 gap-2 text-xs text-slate-700 dark:text-slate-300 font-mono">
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-indigo-600 dark:bg-indigo-400"></span>KiCad &amp; CNC Gerber</span>
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-600 dark:bg-blue-400"></span>ESP32 AsyncWebServer</span>
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600 dark:bg-emerald-400"></span>DHT22 &amp; Soil ADC</span>
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-600 dark:bg-amber-400"></span>ThingSpeak Sync</span>
+                  </div>
+                </div>
+              </div>
+              <div class="px-6 sm:px-7 py-4 border-t border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-950/50">
+                <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-indigo-700 dark:bg-slate-800 dark:border-slate-700 dark:text-indigo-300 font-medium">KiCad &amp; CNC</span>
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-blue-700 dark:bg-slate-800 dark:border-slate-700 dark:text-blue-300 font-medium">ESP32 &amp; LittleFS</span>
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-emerald-700 dark:bg-slate-800 dark:border-slate-700 dark:text-emerald-300 font-medium">DHT22 &amp; Relay</span>
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-300">ThingSpeak</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4: Lab Workflow, Wall Follower, IMU & ESC -->
+            <div class="reveal project-card-item surface-card rounded-2xl overflow-hidden surface-card-hover flex flex-col justify-between" data-categories="iot-hardware,system-analysis">
+              <div>
+                <div class="p-6 sm:p-7 border-b border-slate-200 dark:border-slate-800 bg-slate-50/80 dark:bg-slate-800/50 flex items-center justify-between flex-wrap gap-2">
+                  <div class="flex items-center gap-2">
+                    <div class="w-9 h-9 rounded-xl bg-amber-50 border border-amber-200 text-amber-600 dark:bg-amber-500/15 dark:border-amber-500/30 dark:text-amber-400 flex items-center justify-center font-bold">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    </div>
+                    <span class="px-2.5 py-1 rounded-md bg-amber-50 border border-amber-200 text-amber-800 dark:bg-amber-500/15 dark:border-amber-500/30 dark:text-amber-300 text-xs font-mono font-bold">Lab &amp; Robotics Workflow</span>
+                  </div>
+                  <span class="font-mono text-xs text-amber-800 dark:text-amber-300 bg-amber-50 dark:bg-amber-500/15 px-2.5 py-1 rounded-md border border-amber-200 dark:border-amber-500/30 font-semibold">
+                    2023 – 2026
+                  </span>
+                </div>
+                <div class="p-6 sm:p-7">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold font-mono text-amber-700 dark:text-amber-400 uppercase">Role: Lab Assistant &amp; Tech Lead</span>
+                    <span class="text-xs font-mono text-slate-500 dark:text-slate-400">Lab Robotik Gunadarma</span>
+                  </div>
+                  <h3 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white mb-2.5" data-i18n="proj4_title">Robot Wall Follower, IMU, Modul &amp; Kompetisi ESC</h3>
+                  <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-5" data-i18n="proj4_desc">
+                    Pengembangan robot Wall Follower (3x ultrasonik NewPing), robot kendali nirkabel IMU (MPU6050 + NRF24L01), penyusunan modul Drone/Mikon/Robotika, serta koordinator teknis ESC.
+                  </p>
+                  <div class="grid grid-cols-2 gap-2 text-xs text-slate-700 dark:text-slate-300 font-mono">
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>Wall Follower (NewPing)</span>
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-600 dark:bg-blue-400"></span>IMU (MPU6050/RF24)</span>
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600 dark:bg-emerald-400"></span>Modul Drone &amp; Mikon</span>
+                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-sky-600 dark:bg-sky-400"></span>ESC Scrutineering</span>
+                  </div>
+                </div>
+              </div>
+              <div class="px-6 sm:px-7 py-4 border-t border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-950/50">
+                <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-amber-800 dark:bg-slate-800 dark:border-slate-700 dark:text-amber-300 font-medium">ESP32 &amp; Arduino</span>
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-blue-700 dark:bg-slate-800 dark:border-slate-700 dark:text-blue-300 font-medium">MPU6050 &amp; NRF24L01</span>
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-300">NewPing Ultrasonic</span>
+                  <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-emerald-700 dark:bg-slate-800 dark:border-slate-700 dark:text-emerald-300 font-medium">Draw.io &amp; SOP</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: DOKUMENTASI KEGIATAN (LOCAL ASSETS + LIGHTBOX) -->
+    <section class="py-20 sm:py-28" id="dokumentasi">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal flex flex-col md:flex-row md:items-end justify-between mb-14 gap-4">
+          <div>
+            <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest font-mono" data-i18n="doc_tag">04. DOKUMENTASI KEGIATAN</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-slate-50 mt-1" data-i18n="doc_title">Dokumentasi Kegiatan</h2>
+          </div>
+          <div class="space-y-1">
+            <p class="text-slate-600 dark:text-slate-400 text-sm max-w-md" data-i18n="doc_sub">Dokumentasi saat pengujian sistem di PT Altrak 1978 dan koordinasi teknis kompetisi robotika ESC.</p>
+            <p class="text-xs font-mono text-blue-600 dark:text-blue-400 flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+              <span data-i18n="lightbox_hint">Klik foto untuk memperbesar</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- KATEGORI 1: PT Altrak 1978 -->
+        <div class="reveal mb-16">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="w-8 h-8 rounded-lg bg-blue-50 border border-blue-200 text-blue-700 dark:bg-blue-500/15 dark:border-blue-500/30 dark:text-blue-300 font-mono font-bold text-sm flex items-center justify-center">01</span>
+            <div>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white" data-i18n="doc_cat1_title">Sosialisasi &amp; Uji Coba Portal Psikotes Online — PT Altrak 1978</h3>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400" data-i18n="doc_cat1_sub">Implementasi sistem di ruang meeting, monitoring tes live para kandidat, dan verifikasi alur aplikasi</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="gallery-card group relative rounded-xl overflow-hidden surface-card surface-card-hover">
+              <div class="aspect-[4/5] overflow-hidden bg-slate-900">
+                <img alt="Febriyan Nanda Saputra di depan Display Psikotes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/altrak-display-portal.jpeg">
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex flex-col justify-end p-4">
+                <span class="gallery-tag text-[10px] font-mono text-blue-300 uppercase font-bold">Display Layar Utama</span>
+                <p class="gallery-caption text-xs text-white font-medium mt-0.5" data-i18n="doc_p1_cap">Presentasi UI Portal Psikotes di Depan Layar Meeting</p>
+              </div>
+            </div>
+            <div class="gallery-card group relative rounded-xl overflow-hidden surface-card surface-card-hover">
+              <div class="aspect-[4/5] overflow-hidden bg-slate-900">
+                <img alt="Uji Coba Ruang Meeting Altrak 1978" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/altrak-live-testing.jpeg">
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex flex-col justify-end p-4">
+                <span class="gallery-tag text-[10px] font-mono text-sky-300 uppercase font-bold">Live Testing Session</span>
+                <p class="gallery-caption text-xs text-white font-medium mt-0.5" data-i18n="doc_p2_cap">Monitoring Jalannya Ujian Online Para Peserta</p>
+              </div>
+            </div>
+            <div class="gallery-card group relative rounded-xl overflow-hidden surface-card surface-card-hover">
+              <div class="aspect-[4/5] overflow-hidden bg-slate-900">
+                <img alt="Pendampingan Teknis Alur Sistem" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/altrak-technical-assistance.jpeg">
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex flex-col justify-end p-4">
+                <span class="gallery-tag text-[10px] font-mono text-emerald-300 uppercase font-bold">Technical Assistance</span>
+                <p class="gallery-caption text-xs text-white font-medium mt-0.5" data-i18n="doc_p3_cap">Pendampingan Pengoperasian Sistem Kepada Peserta</p>
+              </div>
+            </div>
+            <div class="gallery-card group relative rounded-xl overflow-hidden surface-card surface-card-hover">
+              <div class="aspect-[4/5] overflow-hidden bg-slate-900">
+                <img alt="Sesi Evaluasi &amp; Tim Penguji Altrak" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/altrak-team-evaluation.jpeg">
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex flex-col justify-end p-4">
+                <span class="gallery-tag text-[10px] font-mono text-amber-300 uppercase font-bold">Team Collaboration</span>
+                <p class="gallery-caption text-xs text-white font-medium mt-0.5" data-i18n="doc_p4_cap">Sesi Evaluasi Feedback &amp; Kebersamaan Tim Uji Coba</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KATEGORI 2: Embedded System Competition (ESC) -->
+        <div class="reveal">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="w-8 h-8 rounded-lg bg-amber-50 border border-amber-200 text-amber-800 dark:bg-amber-500/15 dark:border-amber-500/30 dark:text-amber-300 font-mono font-bold text-sm flex items-center justify-center">02</span>
+            <div>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white" data-i18n="doc_cat2_title">Kepemimpinan Embedded System Competition (ESC)</h3>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400" data-i18n="doc_cat2_sub">Pengarah teknis kompetisi maze-solver, koordinasi dengan juri, dan inspeksi standarisasi lintasan</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            <div class="gallery-card group relative rounded-xl overflow-hidden surface-card surface-card-hover">
+              <div class="aspect-[4/5] overflow-hidden bg-slate-900">
+                <img alt="Febriyan Memimpin Acara ESC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/esc-lead-coordinator.jpeg">
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex flex-col justify-end p-3.5">
+                <span class="gallery-tag text-[10px] font-mono text-amber-300 uppercase font-bold">Lead Coordinator</span>
+                <p class="gallery-caption text-xs text-white font-medium mt-0.5" data-i18n="doc_e1_cap">Membuka &amp; Memberikan Pengarahan Kompetisi</p>
+              </div>
+            </div>
+            <div class="gallery-card group relative rounded-xl overflow-hidden surface-card surface-card-hover">
+              <div class="aspect-[4/5] overflow-hidden bg-slate-900">
+                <img alt="Koordinasi Dewan Juri" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/esc-jury-alignment.jpeg">
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex flex-col justify-end p-3.5">
+                <span class="gallery-tag text-[10px] font-mono text-blue-300 uppercase font-bold">Jury Alignment</span>
+                <p class="gallery-caption text-xs text-white font-medium mt-0.5" data-i18n="doc_e2_cap">Penetapan Kriteria Penilaian Bersama Juri</p>
+              </div>
+            </div>
+            <div class="gallery-card group relative rounded-xl overflow-hidden surface-card surface-card-hover">
+              <div class="aspect-[4/5] overflow-hidden bg-slate-900">
+                <img alt="Inspeksi Arena Maze Solver" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/esc-track-validation.jpeg">
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex flex-col justify-end p-3.5">
+                <span class="gallery-tag text-[10px] font-mono text-emerald-300 uppercase font-bold">Track Validation</span>
+                <p class="gallery-caption text-xs text-white font-medium mt-0.5" data-i18n="doc_e3_cap">Inspeksi Standarisasi Dimensi Arena Labirin Robot</p>
+              </div>
+            </div>
+            <div class="gallery-card group relative rounded-xl overflow-hidden surface-card surface-card-hover">
+              <div class="aspect-[4/5] overflow-hidden bg-slate-900">
+                <img alt="Briefing Peserta ESC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/esc-rules-briefing.jpeg">
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex flex-col justify-end p-3.5">
+                <span class="gallery-tag text-[10px] font-mono text-sky-300 uppercase font-bold">Rules Briefing</span>
+                <p class="gallery-caption text-xs text-white font-medium mt-0.5" data-i18n="doc_e4_cap">Penjelasan Regulasi &amp; Alur Teknis Peserta</p>
+              </div>
+            </div>
+            <div class="gallery-card group relative rounded-xl overflow-hidden surface-card surface-card-hover sm:col-span-2 lg:col-span-1">
+              <div class="aspect-[4/5] overflow-hidden bg-slate-900">
+                <img alt="Pemeriksaan Robot Peserta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/esc-technical-scrutineering.jpeg">
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex flex-col justify-end p-3.5">
+                <span class="gallery-tag text-[10px] font-mono text-indigo-300 uppercase font-bold">Technical Scrutineering</span>
+                <p class="gallery-caption text-xs text-white font-medium mt-0.5" data-i18n="doc_e5_cap">Inspeksi Hardware &amp; Sensor Robotik Peserta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KATEGORI 3: Proyek IoT & Sistem TrackingMBG.id -->
+        <div class="reveal mt-16">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="w-8 h-8 rounded-lg bg-sky-50 border border-sky-200 text-sky-700 dark:bg-sky-500/15 dark:border-sky-500/30 dark:text-sky-300 font-mono font-bold text-sm flex items-center justify-center">03</span>
+            <div>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white" data-i18n="doc_cat3_title">Proyek IoT &amp; Sistem TrackingMBG.id</h3>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400" data-i18n="doc_cat3_sub">Prototipe hardware kotak logistik (ESP32, DHT21, RFID RC522, GPS NEO-6M), arsitektur sistem cloud API, dan dashboard monitoring real-time</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div class="gallery-card group relative rounded-xl overflow-hidden surface-card surface-card-hover">
+              <div class="aspect-[16/10] overflow-hidden bg-slate-900">
+                <img alt="Dashboard TrackingMBG.id Real-time" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" src="assets/images/mbg-dashboard-ui.png">
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex flex-col justify-end p-4">
+                <span class="gallery-tag text-[10px] font-mono text-sky-300 uppercase font-bold">Web Dashboard UI</span>
+                <p class="gallery-caption text-xs text-white font-medium mt-0.5" data-i18n="doc_m1_cap">Dashboard TrackingMBG.id — Monitoring Pengiriman &amp; Status Pengemudi</p>
+              </div>
+            </div>
+            <div class="gallery-card group relative rounded-xl overflow-hidden surface-card surface-card-hover">
+              <div class="aspect-[16/10] overflow-hidden bg-slate-900">
+                <img alt="Prototipe Hardware IoT Tracking MBG" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/mbg-hardware-prototype.jpg">
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex flex-col justify-end p-4">
+                <span class="gallery-tag text-[10px] font-mono text-emerald-300 uppercase font-bold">Hardware Prototype</span>
+                <p class="gallery-caption text-xs text-white font-medium mt-0.5" data-i18n="doc_m2_cap">Rangkaian Sensor DHT21, RFID RC522, ESP32 &amp; GPS NEO-6M pada Box</p>
+              </div>
+            </div>
+            <div class="gallery-card group relative rounded-xl overflow-hidden surface-card surface-card-hover">
+              <div class="aspect-[16/10] overflow-hidden bg-white">
+                <img alt="Arsitektur Sistem TrackingMBG.id" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 p-2" src="assets/images/mbg-system-architecture.jpg">
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex flex-col justify-end p-4">
+                <span class="gallery-tag text-[10px] font-mono text-blue-300 uppercase font-bold">System Architecture</span>
+                <p class="gallery-caption text-xs text-white font-medium mt-0.5" data-i18n="doc_m3_cap">Arsitektur End-to-End Hardware ESP32, Cloud API &amp; Pegawai SPPG</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: MATRIKS SKILL & KOMPETENSI -->
+    <section class="py-20 sm:py-28 bg-white dark:bg-slate-900/40 border-t border-slate-200 dark:border-slate-800 transition-colors duration-300" id="keahlian">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal max-w-3xl mb-14">
+          <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest font-mono" data-i18n="skills_tag">05. KEAHLIAN &amp; TEKNOLOGI</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-slate-50 mt-1" data-i18n="skills_title">Kemampuan Utama &amp; Kompetensi Teknis</h2>
+          <p class="text-slate-600 dark:text-slate-400 text-base mt-2" data-i18n="skills_sub">Dikelompokkan secara profesional dari metodologi analisis proses bisnis, coding &amp; database, modern tooling hingga soft skills.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="reveal surface-card rounded-2xl p-7 surface-card-hover">
+            <div class="flex items-center gap-3.5 mb-5">
+              <div class="w-10 h-10 rounded-xl bg-blue-50 border border-blue-200 text-blue-600 dark:bg-blue-500/15 dark:border-blue-500/30 dark:text-blue-400 flex items-center justify-center font-bold">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white" data-i18n="skill1_title">Analisis &amp; Dokumen Sistem</h3>
+                <span class="text-xs font-mono text-slate-500 dark:text-slate-400">Business &amp; Technical Requirements</span>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mb-6 leading-relaxed" data-i18n="skill1_desc">
+              Mampu menjembatani kebutuhan divisi operasional/bisnis menjadi pemodelan arsitektur teknis terstandar industri.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs font-mono">
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200">Analisis Sistem</span>
+              <span class="px-3 py-1.5 rounded-lg bg-blue-50 border border-blue-200 text-blue-700 dark:bg-blue-500/15 dark:border-blue-500/30 dark:text-blue-300 font-semibold">SDLC (Agile &amp; Waterfall)</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200">Draw.io (Flowchart &amp; DFD)</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200">Requirements Gathering</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200">Business Process Mapping</span>
+              <span class="px-3 py-1.5 rounded-lg bg-sky-50 border border-sky-200 text-sky-700 dark:bg-sky-500/15 dark:border-sky-500/30 dark:text-sky-300 font-semibold">Dokumentasi Teknis &amp; SOP</span>
+            </div>
+          </div>
+
+          <div class="reveal surface-card rounded-2xl p-7 surface-card-hover">
+            <div class="flex items-center gap-3.5 mb-5">
+              <div class="w-10 h-10 rounded-xl bg-sky-50 border border-sky-200 text-sky-600 dark:bg-sky-500/15 dark:border-sky-500/30 dark:text-sky-400 flex items-center justify-center font-bold">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white" data-i18n="skill2_title">Pemrograman &amp; Data</h3>
+                <span class="text-xs font-mono text-slate-500 dark:text-slate-400">Database &amp; Application Development</span>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mb-6 leading-relaxed" data-i18n="skill2_desc">
+              Arsitektur database relasional, kueri analitik, manipulasi dataset, serta full-stack web engineering.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs font-mono">
+              <span class="px-3 py-1.5 rounded-lg bg-sky-50 border border-sky-200 text-sky-700 dark:bg-sky-500/15 dark:border-sky-500/30 dark:text-sky-300 font-semibold">SQL (MySQL &amp; PostgreSQL)</span>
+              <span class="px-3 py-1.5 rounded-lg bg-blue-50 border border-blue-200 text-blue-700 dark:bg-blue-500/15 dark:border-blue-500/30 dark:text-blue-300 font-semibold">JavaScript</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200">Node.js</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200 font-semibold">HTML5 / CSS3</span>
+              <span class="px-3 py-1.5 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-700 dark:bg-emerald-500/15 dark:border-emerald-500/30 dark:text-emerald-300 font-semibold">Python</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200">Data Science Dasar</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200">Data Cleansing</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200">C / C++</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200">Java</span>
+            </div>
+          </div>
+
+          <div class="reveal surface-card rounded-2xl p-7 surface-card-hover">
+            <div class="flex items-center gap-3.5 mb-5">
+              <div class="w-10 h-10 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-600 dark:bg-emerald-500/15 dark:border-emerald-500/30 dark:text-emerald-400 flex items-center justify-center font-bold">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white" data-i18n="skill3_title">DevOps, AI Tools &amp; Hardware</h3>
+                <span class="text-xs font-mono text-slate-500 dark:text-slate-400">Deployment &amp; Modern Workflows</span>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mb-6 leading-relaxed" data-i18n="skill3_desc">
+              Workflow otomatisasi modern, deployment cloud, integrasi AI tooling untuk akselerasi kerja, dan mikrokontroler.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs font-mono">
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200 font-semibold">Git &amp; GitHub</span>
+              <span class="px-3 py-1.5 rounded-lg bg-blue-50 border border-blue-200 text-blue-700 dark:bg-blue-500/15 dark:border-blue-500/30 dark:text-blue-300 font-semibold">GitHub Actions (CI/CD)</span>
+              <span class="px-3 py-1.5 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-700 dark:bg-emerald-500/15 dark:border-emerald-500/30 dark:text-emerald-300 font-semibold">Supabase (Auth, RLS, Storage)</span>
+              <span class="px-3 py-1.5 rounded-lg bg-blue-50 border border-blue-200 text-blue-700 dark:bg-blue-500/15 dark:border-blue-500/30 dark:text-blue-300 font-semibold">Docker &amp; Vercel</span>
+              <span class="px-3 py-1.5 rounded-lg bg-sky-50 border border-sky-200 text-sky-700 dark:bg-sky-500/15 dark:border-sky-500/30 dark:text-sky-300 font-semibold">Strix &amp; Hermes</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200">AI Agent Skills</span>
+              <span class="px-3 py-1.5 rounded-lg bg-amber-50 border border-amber-200 text-amber-700 dark:bg-amber-500/15 dark:border-amber-500/30 dark:text-amber-300 font-semibold">IoT (ESP32 / Arduino / Raspberry Pi)</span>
+              <span class="px-3 py-1.5 rounded-lg bg-indigo-50 border border-indigo-200 text-indigo-700 dark:bg-indigo-500/15 dark:border-indigo-500/30 dark:text-indigo-300 font-semibold">KiCad PCB &amp; CNC Routing</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200 font-semibold">Drone Systems &amp; Calibration</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200">Embedded System Programming</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200">Electronic Circuit &amp; Protoboard</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200">K3 Electronic Components</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200">Intelligent IoT Systems</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200">OpenCV &amp; Flask</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200">Cloud Computing Basics</span>
+            </div>
+          </div>
+
+          <div class="reveal surface-card rounded-2xl p-7 surface-card-hover">
+            <div class="flex items-center gap-3.5 mb-5">
+              <div class="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 text-amber-600 dark:bg-amber-500/15 dark:border-amber-500/30 dark:text-amber-400 flex items-center justify-center font-bold">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white" data-i18n="skill4_title">Soft Skills &amp; Leadership</h3>
+                <span class="text-xs font-mono text-slate-500 dark:text-slate-400">Collaboration &amp; Problem Solving</span>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mb-6 leading-relaxed" data-i18n="skill4_desc">
+              Kemampuan komunikasi lintas disiplin, kepemimpinan koordinasi tim di bawah tenggat waktu, dan adaptasi cepat.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs font-mono">
+              <span class="px-3 py-1.5 rounded-lg bg-amber-50 border border-amber-200 text-amber-800 dark:bg-amber-500/15 dark:border-amber-500/30 dark:text-amber-300 font-semibold">Problem Solving</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200">Analytical Thinking</span>
+              <span class="px-3 py-1.5 rounded-lg bg-blue-50 border border-blue-200 text-blue-700 dark:bg-blue-500/15 dark:border-blue-500/30 dark:text-blue-300 font-semibold">Leadership &amp; Teamwork</span>
+              <span class="px-3 py-1.5 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-700 dark:bg-emerald-500/15 dark:border-emerald-500/30 dark:text-emerald-300 font-semibold">Fast Adaptability</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200 font-semibold">Project Management</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200">Komunikasi Antar-Departemen</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200">Manajemen Waktu &amp; Target</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: SERTIFIKASI & PELATIHAN -->
+    <section class="py-20 sm:py-28" id="sertifikasi">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal max-w-3xl mb-10">
+          <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest font-mono" data-i18n="cert_tag">06. PELATIHAN &amp; SERTIFIKASI</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-slate-50 mt-1" data-i18n="cert_title">Pelatihan &amp; Sertifikasi Profesional</h2>
+          <p class="text-slate-600 dark:text-slate-400 text-base mt-2" data-i18n="cert_sub">17 sertifikat kompetensi resmi dari Dicoding Indonesia dan Universitas Gunadarma di bidang Software/AI, Robotik &amp; IoT, serta Jaringan Komputer.</p>
+        </div>
+
+        <!-- Certificate Category Filter Pills -->
+        <div class="reveal mb-8" id="cert-filters-container">
+          <div class="flex items-center gap-2 overflow-x-auto pb-2 sm:pb-0">
+            <button type="button" data-cert-filter="all" class="cert-filter-pill inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-900 text-white dark:bg-blue-600 dark:text-white shadow-sm whitespace-nowrap">
+              <span data-i18n="cert_filter_all">Semua Sertifikat</span>
+              <span class="cert-filter-count px-1.5 py-0.5 rounded-md text-[10px] font-mono bg-white/20 text-white">17</span>
+            </button>
+            <button type="button" data-cert-filter="robotics-iot" class="cert-filter-pill inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 dark:bg-slate-800/80 dark:hover:bg-slate-800 dark:text-slate-300 dark:border-slate-700 whitespace-nowrap">
+              <span data-i18n="cert_filter_iot">Robotik, Embedded &amp; IoT</span>
+              <span class="cert-filter-count px-1.5 py-0.5 rounded-md text-[10px] font-mono bg-slate-200/80 text-slate-700 dark:bg-slate-700 dark:text-slate-300">6</span>
+            </button>
+            <button type="button" data-cert-filter="software-ai" class="cert-filter-pill inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 dark:bg-slate-800/80 dark:hover:bg-slate-800 dark:text-slate-300 dark:border-slate-700 whitespace-nowrap">
+              <span data-i18n="cert_filter_se">Software, Web &amp; AI</span>
+              <span class="cert-filter-count px-1.5 py-0.5 rounded-md text-[10px] font-mono bg-slate-200/80 text-slate-700 dark:bg-slate-700 dark:text-slate-300">6</span>
+            </button>
+            <button type="button" data-cert-filter="networking" class="cert-filter-pill inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 dark:bg-slate-800/80 dark:hover:bg-slate-800 dark:text-slate-300 dark:border-slate-700 whitespace-nowrap">
+              <span data-i18n="cert_filter_net">Jaringan &amp; Aptitude</span>
+              <span class="cert-filter-count px-1.5 py-0.5 rounded-md text-[10px] font-mono bg-slate-200/80 text-slate-700 dark:bg-slate-700 dark:text-slate-300">5</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+          <!-- ROBOTIK, EMBEDDED & IOT (6) -->
+          <div class="reveal cert-card-item surface-card rounded-xl p-5 surface-card-hover flex flex-col justify-between gap-4" data-cert-category="robotics-iot">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-amber-50 border border-amber-200 text-amber-600 dark:bg-amber-500/15 dark:border-amber-500/30 dark:text-amber-400 flex items-center justify-center flex-shrink-0 font-mono font-bold text-xs">IoT</div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base leading-snug">Creating Intelligent Systems on IoT Devices</h4>
+                <p class="text-xs font-mono text-amber-700 dark:text-amber-400 font-semibold mt-0.5">Universitas Gunadarma • 2026</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-1.5 leading-relaxed" data-i18n="cert_r1_desc">Perancangan sistem cerdas terintegrasi pada perangkat IoT dan aktuator.</p>
+              </div>
+            </div>
+            <a href="assets/docs/sertifikat/2026-05-25_Gunadarma_Creating_Intelligent_Systems_on_IoT_Devices.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 w-fit" data-i18n="cert_view_pdf">Lihat Sertifikat (PDF) →</a>
+          </div>
+
+          <div class="reveal cert-card-item surface-card rounded-xl p-5 surface-card-hover flex flex-col justify-between gap-4" data-cert-category="robotics-iot">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-amber-50 border border-amber-200 text-amber-600 dark:bg-amber-500/15 dark:border-amber-500/30 dark:text-amber-400 flex items-center justify-center flex-shrink-0 font-mono font-bold text-xs">MCU</div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base leading-snug">Embedded System Programming Microcontroller</h4>
+                <p class="text-xs font-mono text-amber-700 dark:text-amber-400 font-semibold mt-0.5">Universitas Gunadarma • 2025</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-1.5 leading-relaxed" data-i18n="cert_r2_desc">Perancangan dan pemrograman sistem tersemat berbasis mikrokontroler.</p>
+              </div>
+            </div>
+            <a href="assets/docs/sertifikat/2025-09-22_Gunadarma_Design_Embedded_System_Programming_Microcontroller.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 w-fit" data-i18n="cert_view_pdf">Lihat Sertifikat (PDF) →</a>
+          </div>
+
+          <div class="reveal cert-card-item surface-card rounded-xl p-5 surface-card-hover flex flex-col justify-between gap-4" data-cert-category="robotics-iot">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-amber-50 border border-amber-200 text-amber-600 dark:bg-amber-500/15 dark:border-amber-500/30 dark:text-amber-400 flex items-center justify-center flex-shrink-0 font-mono font-bold text-xs">PCB</div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base leading-snug">Design Prototype Electronic Circuit on Protoboard</h4>
+                <p class="text-xs font-mono text-amber-700 dark:text-amber-400 font-semibold mt-0.5">Universitas Gunadarma • 2025</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-1.5 leading-relaxed" data-i18n="cert_r3_desc">Perancangan dan pengujian prototipe rangkaian elektronika di protoboard.</p>
+              </div>
+            </div>
+            <a href="assets/docs/sertifikat/2025-06-16_Gunadarma_Design_Prototype_Electronic_Circuit_on_Protoboard.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 w-fit" data-i18n="cert_view_pdf">Lihat Sertifikat (PDF) →</a>
+          </div>
+
+          <div class="reveal cert-card-item surface-card rounded-xl p-5 surface-card-hover flex flex-col justify-between gap-4" data-cert-category="robotics-iot">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-amber-50 border border-amber-200 text-amber-600 dark:bg-amber-500/15 dark:border-amber-500/30 dark:text-amber-400 flex items-center justify-center flex-shrink-0 font-mono font-bold text-xs">HW</div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base leading-snug">Microcontroller Systems</h4>
+                <p class="text-xs font-mono text-amber-700 dark:text-amber-400 font-semibold mt-0.5">Universitas Gunadarma • 2025</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-1.5 leading-relaxed" data-i18n="cert_r4_desc">Arsitektur mikrokontroler, I/O sensor, aktuator, dan antarmuka perangkat keras.</p>
+              </div>
+            </div>
+            <a href="assets/docs/sertifikat/2025-03-27_Gunadarma_Microcontroller.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 w-fit" data-i18n="cert_view_pdf">Lihat Sertifikat (PDF) →</a>
+          </div>
+
+          <div class="reveal cert-card-item surface-card rounded-xl p-5 surface-card-hover flex flex-col justify-between gap-4" data-cert-category="robotics-iot">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-amber-50 border border-amber-200 text-amber-600 dark:bg-amber-500/15 dark:border-amber-500/30 dark:text-amber-400 flex items-center justify-center flex-shrink-0 font-mono font-bold text-xs">K3</div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base leading-snug">K3 Procedures &amp; Electronic Components</h4>
+                <p class="text-xs font-mono text-amber-700 dark:text-amber-400 font-semibold mt-0.5">Universitas Gunadarma • 2025</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-1.5 leading-relaxed" data-i18n="cert_r5_desc">Prosedur keselamatan kerja laboratorium (K3) dan karakterisasi komponen elektronika.</p>
+              </div>
+            </div>
+            <a href="assets/docs/sertifikat/2025-02-17_Gunadarma_K3_Procedures_and_Electronic_Components.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 w-fit" data-i18n="cert_view_pdf">Lihat Sertifikat (PDF) →</a>
+          </div>
+
+          <div class="reveal cert-card-item surface-card rounded-xl p-5 surface-card-hover flex flex-col justify-between gap-4" data-cert-category="robotics-iot">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-amber-50 border border-amber-200 text-amber-600 dark:bg-amber-500/15 dark:border-amber-500/30 dark:text-amber-400 flex items-center justify-center flex-shrink-0 font-mono font-bold text-xs">UAV</div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base leading-snug">Drone Systems &amp; Robotics</h4>
+                <p class="text-xs font-mono text-amber-700 dark:text-amber-400 font-semibold mt-0.5">Universitas Gunadarma • 2023</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-1.5 leading-relaxed" data-i18n="cert_r6_desc">Perakitan, kalibrasi flight controller, dan kendali sistem drone.</p>
+              </div>
+            </div>
+            <a href="assets/docs/sertifikat/2023-11-13_Gunadarma_Drone.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 w-fit" data-i18n="cert_view_pdf">Lihat Sertifikat (PDF) →</a>
+          </div>
+
+          <!-- SOFTWARE, WEB & AI (6) -->
+          <div class="reveal cert-card-item surface-card rounded-xl p-5 surface-card-hover flex flex-col justify-between gap-4" data-cert-category="software-ai">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-200 text-blue-600 dark:bg-blue-500/15 dark:border-blue-500/30 dark:text-blue-400 flex items-center justify-center flex-shrink-0 font-mono font-bold text-xs">HTML</div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base leading-snug">Building Website using HTML5</h4>
+                <p class="text-xs font-mono text-blue-700 dark:text-blue-400 font-semibold mt-0.5">Universitas Gunadarma • 2025</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-1.5 leading-relaxed" data-i18n="cert_s1_desc">Pengembangan antarmuka web modern berstandar HTML5 semantik dan responsif.</p>
+              </div>
+            </div>
+            <a href="assets/docs/sertifikat/2025-03-20_Gunadarma_Building_Website_using_HTML5.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 w-fit" data-i18n="cert_view_pdf">Lihat Sertifikat (PDF) →</a>
+          </div>
+
+          <div class="reveal cert-card-item surface-card rounded-xl p-5 surface-card-hover flex flex-col justify-between gap-4" data-cert-category="software-ai">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-indigo-50 border border-indigo-200 text-indigo-600 dark:bg-indigo-500/15 dark:border-indigo-500/30 dark:text-indigo-400 flex items-center justify-center flex-shrink-0 font-mono font-bold text-xs">AI</div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base leading-snug">Belajar Dasar AI</h4>
+                <p class="text-xs font-mono text-indigo-700 dark:text-indigo-400 font-semibold mt-0.5">Dicoding Indonesia • 2024</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-1.5 leading-relaxed" data-i18n="cert_s2_desc">Konsep dasar kecerdasan buatan, machine learning, dan pemanfaatan AI modern.</p>
+              </div>
+            </div>
+            <a href="assets/docs/sertifikat/2024-09-19_Dicoding_Belajar_Dasar_AI_EYX4KM836PDL.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 w-fit" data-i18n="cert_view_pdf">Lihat Sertifikat (PDF) →</a>
+          </div>
+
+          <div class="reveal cert-card-item surface-card rounded-xl p-5 surface-card-hover flex flex-col justify-between gap-4" data-cert-category="software-ai">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-sky-50 border border-sky-200 text-sky-600 dark:bg-sky-500/15 dark:border-sky-500/30 dark:text-sky-400 flex items-center justify-center flex-shrink-0 font-mono font-bold text-xs">DS</div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base leading-snug">Belajar Dasar Data Science</h4>
+                <p class="text-xs font-mono text-sky-700 dark:text-sky-400 font-semibold mt-0.5">Dicoding Indonesia • 2023</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-1.5 leading-relaxed" data-i18n="cert_s3_desc">Pengolahan dataset, statistik deskriptif, dan visualisasi data analitis.</p>
+              </div>
+            </div>
+            <a href="assets/docs/sertifikat/2023-11-15_Dicoding_Belajar_Dasar_Data_Science_JMZVV80R3ZN9.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 w-fit" data-i18n="cert_view_pdf">Lihat Sertifikat (PDF) →</a>
+          </div>
+
+          <div class="reveal cert-card-item surface-card rounded-xl p-5 surface-card-hover flex flex-col justify-between gap-4" data-cert-category="software-ai">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-200 text-blue-600 dark:bg-blue-500/15 dark:border-blue-500/30 dark:text-blue-400 flex items-center justify-center flex-shrink-0 font-mono font-bold text-xs">SQL</div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base leading-snug">Belajar Dasar SQL</h4>
+                <p class="text-xs font-mono text-blue-700 dark:text-blue-400 font-semibold mt-0.5">Dicoding Indonesia • 2023</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-1.5 leading-relaxed" data-i18n="cert_s4_desc">Pemodelan relasional, kompleksitas JOIN, dan optimasi query database.</p>
+              </div>
+            </div>
+            <a href="assets/docs/sertifikat/2023-10-17_Dicoding_Belajar_Dasar_SQL_MRZM6ORMKPYQ.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 w-fit" data-i18n="cert_view_pdf">Lihat Sertifikat (PDF) →</a>
+          </div>
+
+          <div class="reveal cert-card-item surface-card rounded-xl p-5 surface-card-hover flex flex-col justify-between gap-4" data-cert-category="software-ai">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-200 text-blue-600 dark:bg-blue-500/15 dark:border-blue-500/30 dark:text-blue-400 flex items-center justify-center flex-shrink-0 font-mono font-bold text-xs">DEV</div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base leading-snug">Memulai Dasar Pemrograman Software</h4>
+                <p class="text-xs font-mono text-blue-700 dark:text-blue-400 font-semibold mt-0.5">Dicoding Indonesia • 2023</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-1.5 leading-relaxed" data-i18n="cert_s5_desc">Logika pemrograman terstruktur, algoritma dasar, dan praktik software engineering.</p>
+              </div>
+            </div>
+            <a href="assets/docs/sertifikat/2023-10-11_Dicoding_Memulai_Dasar_Pemrograman_Software_N9ZOM5310PG5.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 w-fit" data-i18n="cert_view_pdf">Lihat Sertifikat (PDF) →</a>
+          </div>
+
+          <div class="reveal cert-card-item surface-card rounded-xl p-5 surface-card-hover flex flex-col justify-between gap-4" data-cert-category="software-ai">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-sky-50 border border-sky-200 text-sky-600 dark:bg-sky-500/15 dark:border-sky-500/30 dark:text-sky-400 flex items-center justify-center flex-shrink-0 font-mono font-bold text-xs">PM</div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base leading-snug">Belajar Dasar Manajemen Proyek</h4>
+                <p class="text-xs font-mono text-sky-700 dark:text-sky-400 font-semibold mt-0.5">Dicoding Indonesia • 2023</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-1.5 leading-relaxed" data-i18n="cert_s6_desc">Siklus manajemen proyek TI, perencanaan ruang lingkup, dan manajemen risiko.</p>
+              </div>
+            </div>
+            <a href="assets/docs/sertifikat/2023-08-26_Dicoding_Belajar_Dasar_Manajemen_Proyek_RVZKRL93EPD5.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 w-fit" data-i18n="cert_view_pdf">Lihat Sertifikat (PDF) →</a>
+          </div>
+
+          <!-- JARINGAN & APTITUDE (5) -->
+          <div class="reveal cert-card-item surface-card rounded-xl p-5 surface-card-hover flex flex-col justify-between gap-4" data-cert-category="networking">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-600 dark:bg-emerald-500/15 dark:border-emerald-500/30 dark:text-emerald-400 flex items-center justify-center flex-shrink-0 font-mono font-bold text-xs">SEC</div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base leading-snug">Computer Networks Security</h4>
+                <p class="text-xs font-mono text-emerald-700 dark:text-emerald-400 font-semibold mt-0.5">Universitas Gunadarma • 2024</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-1.5 leading-relaxed" data-i18n="cert_n1_desc">Keamanan infrastruktur jaringan, firewall, dan protokol proteksi sistem.</p>
+              </div>
+            </div>
+            <a href="assets/docs/sertifikat/2024-06-24_Gunadarma_Computer_Networks_Security.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 w-fit" data-i18n="cert_view_pdf">Lihat Sertifikat (PDF) →</a>
+          </div>
+
+          <div class="reveal cert-card-item surface-card rounded-xl p-5 surface-card-hover flex flex-col justify-between gap-4" data-cert-category="networking">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-600 dark:bg-emerald-500/15 dark:border-emerald-500/30 dark:text-emerald-400 flex items-center justify-center flex-shrink-0 font-mono font-bold text-xs">NET</div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base leading-snug">Addressing &amp; Routing in Computer Networks</h4>
+                <p class="text-xs font-mono text-emerald-700 dark:text-emerald-400 font-semibold mt-0.5">Universitas Gunadarma • 2024</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-1.5 leading-relaxed" data-i18n="cert_n2_desc">Pengalamatan IP, subnetting, dan konfigurasi routing protokol TCP/IP.</p>
+              </div>
+            </div>
+            <a href="assets/docs/sertifikat/2024-02-19_Gunadarma_Addressing_and_Routing_in_Computer_Networks.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 w-fit" data-i18n="cert_view_pdf">Lihat Sertifikat (PDF) →</a>
+          </div>
+
+          <div class="reveal cert-card-item surface-card rounded-xl p-5 surface-card-hover flex flex-col justify-between gap-4" data-cert-category="networking">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-600 dark:bg-emerald-500/15 dark:border-emerald-500/30 dark:text-emerald-400 flex items-center justify-center flex-shrink-0 font-mono font-bold text-xs">LAN</div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base leading-snug">Computer Networks Connectivity</h4>
+                <p class="text-xs font-mono text-emerald-700 dark:text-emerald-400 font-semibold mt-0.5">Universitas Gunadarma • 2023</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-1.5 leading-relaxed" data-i18n="cert_n3_desc">Konektivitas jaringan, konfigurasi switch/router, dan pemecahan masalah koneksi.</p>
+              </div>
+            </div>
+            <a href="assets/docs/sertifikat/2023-06-05_Gunadarma_Computer_Networks_Connectivity.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 w-fit" data-i18n="cert_view_pdf">Lihat Sertifikat (PDF) →</a>
+          </div>
+
+          <div class="reveal cert-card-item surface-card rounded-xl p-5 surface-card-hover flex flex-col justify-between gap-4" data-cert-category="networking">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-600 dark:bg-emerald-500/15 dark:border-emerald-500/30 dark:text-emerald-400 flex items-center justify-center flex-shrink-0 font-mono font-bold text-xs">REQ</div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base leading-snug">Computer Networks Requirement Identification</h4>
+                <p class="text-xs font-mono text-emerald-700 dark:text-emerald-400 font-semibold mt-0.5">Universitas Gunadarma • 2023</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-1.5 leading-relaxed" data-i18n="cert_n4_desc">Analisis kebutuhan topologi, perangkat, dan perencanaan arsitektur jaringan.</p>
+              </div>
+            </div>
+            <a href="assets/docs/sertifikat/2023-02-27_Gunadarma_Computer_Networks_Requirement_Identification.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 w-fit" data-i18n="cert_view_pdf">Lihat Sertifikat (PDF) →</a>
+          </div>
+
+          <div class="reveal cert-card-item surface-card rounded-xl p-5 surface-card-hover flex flex-col justify-between gap-4" data-cert-category="networking">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-slate-100 border border-slate-200 text-slate-700 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-300 flex items-center justify-center flex-shrink-0 font-mono font-bold text-xs">APT</div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base leading-snug">Aptitude Test</h4>
+                <p class="text-xs font-mono text-slate-600 dark:text-slate-400 font-semibold mt-0.5">Universitas Gunadarma • 2026</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-1.5 leading-relaxed" data-i18n="cert_n5_desc">Evaluasi potensi skolastik, penalaran analitis, dan kesiapan karier profesional.</p>
+              </div>
+            </div>
+            <a href="assets/docs/sertifikat/2026-07-17_Gunadarma_Aptitude_Test.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-semibold text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 w-fit" data-i18n="cert_view_pdf">Lihat Sertifikat (PDF) →</a>
+          </div>
+        </div>
+
+        <!-- Toggle Show All Certificates -->
+        <div class="mt-8 flex justify-center">
+          <button id="cert-toggle-btn" type="button" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white hover:bg-slate-100 dark:bg-slate-900 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-100 text-xs sm:text-sm font-semibold shadow-xs transition-all" data-i18n="cert_show_all">
+            Lihat Semua Sertifikat (17)
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: KONTAK & CTA DOWNLOAD CV -->
+    <section class="py-20 sm:py-28 relative" id="kontak">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal relative rounded-3xl overflow-hidden surface-card border border-blue-200 dark:border-blue-500/30 p-8 sm:p-12 lg:p-16 shadow-lg">
+          <div class="relative z-10 max-w-4xl">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 dark:bg-blue-500/15 dark:border-blue-500/30 dark:text-blue-300 text-xs font-mono font-semibold uppercase mb-4">
+              <span data-i18n="contact_badge">🚀 Ready for Immediate Impact</span>
+            </div>
+            <h2 class="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white tracking-tight leading-[1.15]" data-i18n="contact_title">
+              Tertarik berkolaborasi atau mendiskusikan peluang kerja?
+            </h2>
+            <p class="text-slate-600 dark:text-slate-300 text-base sm:text-lg mt-4 leading-relaxed max-w-3xl" data-i18n="contact_sub">
+              Saya terbuka untuk peluang kerja di bidang IT — baik sebagai <strong class="text-slate-900 dark:text-white">AI Engineer, Web Developer, System Analyst, maupun program Management Trainee</strong>. Silakan unduh CV saya atau hubungi melalui WhatsApp dan email.
+            </p>
+
+            <!-- Download CV Banner -->
+            <div class="mt-8 p-5 sm:p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-blue-200 dark:border-blue-500/30 flex flex-col sm:flex-row items-center justify-between gap-5">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center text-white flex-shrink-0 shadow-md shadow-blue-600/20">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900 dark:text-white text-base" data-i18n="contact_cv_title">Curriculum Vitae Resmi Febriyan Nanda Saputra</h4>
+                  <p class="text-xs text-slate-500 dark:text-slate-400 font-mono" data-i18n="contact_cv_meta">Format: PDF • ATS-Friendly • Portofolio &amp; Pengalaman Terkini</p>
+                </div>
+              </div>
+              <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-md shadow-blue-600/20 hover:scale-[1.02] active:scale-[0.98] transition-all whitespace-nowrap" download="CV_Febriyan_Nanda_Saputra.pdf" href="assets/docs/CV_Febriyan_Nanda_Saputra.pdf">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
+                </svg>
+                <span data-i18n="contact_cv_btn">Unduh CV Lengkap (PDF)</span>
+              </a>
+            </div>
+
+            <!-- Direct Contact Channels with Copy-to-Clipboard -->
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 hover:border-emerald-400 dark:hover:border-emerald-500/50 transition-all flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-3">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-600 dark:bg-emerald-500/15 dark:border-emerald-500/30 dark:text-emerald-400 flex items-center justify-center">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    </div>
+                    <button type="button" data-copy="+62 878-7227-3539" class="px-2.5 py-1 rounded-lg text-[11px] font-mono bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:text-emerald-700 dark:hover:text-emerald-400 hover:border-emerald-300 transition-colors" data-i18n="copy_phone_label">
+                      Salin No. HP
+                    </button>
+                  </div>
+                  <span class="text-xs text-slate-500 dark:text-slate-400 font-mono uppercase block" data-i18n="wa_label">WhatsApp Langsung</span>
+                  <span class="text-sm font-bold text-slate-900 dark:text-white mt-0.5 block">+62 878-7227-3539</span>
+                </div>
+                <a class="text-xs text-emerald-700 dark:text-emerald-400 font-semibold mt-4 flex items-center gap-1 hover:underline" href="https://wa.me/6287872273539?text=Halo%20Febriyan,%20saya%20tertarik%20melihat%20portfolio%20Anda" rel="noopener noreferrer" target="_blank" data-i18n="wa_cta">Kirim Pesan WhatsApp →</a>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-500/50 transition-all flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-3">
+                    <div class="w-10 h-10 rounded-xl bg-blue-50 border border-blue-200 text-blue-600 dark:bg-blue-500/15 dark:border-blue-500/30 dark:text-blue-400 flex items-center justify-center">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    </div>
+                    <button type="button" data-copy="febriyandah1@gmail.com" class="px-2.5 py-1 rounded-lg text-[11px] font-mono bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-400 hover:border-blue-300 transition-colors" data-i18n="copy_email_label">
+                      Salin Email
+                    </button>
+                  </div>
+                  <span class="text-xs text-slate-500 dark:text-slate-400 font-mono uppercase block" data-i18n="email_label">Email Resmi</span>
+                  <span class="text-sm font-bold text-slate-900 dark:text-white mt-0.5 block break-all">febriyandah1@gmail.com</span>
+                </div>
+                <a class="text-xs text-blue-700 dark:text-blue-400 font-semibold mt-4 flex items-center gap-1 hover:underline" href="mailto:febriyandah1@gmail.com" data-i18n="email_cta">Kirim Email →</a>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 hover:border-sky-400 dark:hover:border-sky-500/50 transition-all flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-3">
+                    <div class="w-10 h-10 rounded-xl bg-sky-50 border border-sky-200 text-sky-600 dark:bg-sky-500/15 dark:border-sky-500/30 dark:text-sky-400 flex items-center justify-center">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg>
+                    </div>
+                  </div>
+                  <span class="text-xs text-slate-500 dark:text-slate-400 font-mono uppercase block" data-i18n="linkedin_label">LinkedIn Resmi</span>
+                  <span class="text-sm font-bold text-slate-900 dark:text-white mt-0.5 block">Febriyan Nanda Saputra</span>
+                </div>
+                <a class="text-xs text-sky-700 dark:text-sky-400 font-semibold mt-4 flex items-center gap-1 hover:underline" href="https://www.linkedin.com/in/febriyan-nanda-saputra/" rel="noopener noreferrer" target="_blank" data-i18n="linkedin_cta">Kunjungi LinkedIn →</a>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 flex flex-col justify-between">
+                <div>
+                  <div class="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 text-amber-600 dark:bg-amber-500/15 dark:border-amber-500/30 dark:text-amber-400 flex items-center justify-center mb-3">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                  </div>
+                  <span class="text-xs text-slate-500 dark:text-slate-400 font-mono uppercase block" data-i18n="dom_label">Domisili &amp; Lokasi</span>
+                  <span class="text-sm font-bold text-slate-900 dark:text-white mt-0.5 block">Kota Bekasi, Jawa Barat</span>
+                </div>
+                <span class="text-xs text-emerald-700 dark:text-emerald-400 font-mono font-medium mt-4" data-i18n="dom_status">Siap On-site / Hybrid / Remote</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-[#090D16] text-slate-500 dark:text-slate-400 py-10 relative z-10 font-mono text-xs transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-7 h-7 rounded-lg bg-slate-900 dark:bg-blue-600 text-white font-bold text-xs flex items-center justify-center shadow-xs">
+          FN
+        </div>
+        <span class="text-slate-900 dark:text-slate-200 font-semibold font-sans">Febriyan Nanda Saputra</span>
+        <span class="text-slate-300 dark:text-slate-700">|</span>
+        <span class="text-slate-500 dark:text-slate-400">Information Technology &amp; Software Engineering</span>
+      </div>
+      <div class="text-slate-500 dark:text-slate-400 text-center sm:text-right">
+        © <span id="copyright-year"></span> Febriyan Nanda Saputra. Engineered with Modern Web Standards.
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL PREVIEW FOTO -->
+  <div id="lightbox-modal" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption" class="fixed inset-0 z-[70] hidden items-center justify-center bg-slate-950/85 backdrop-blur-md p-4 sm:p-6">
+    <div class="relative max-w-4xl w-full bg-slate-900 border border-slate-700 rounded-2xl overflow-hidden shadow-2xl">
+      <div class="flex items-center justify-between px-4 py-3 border-b border-slate-800 bg-slate-950">
+        <div class="flex items-center gap-3">
+          <span id="lightbox-counter" class="text-xs font-mono text-slate-400">1 / 9</span>
+          <span id="lightbox-tag" class="text-xs font-mono font-semibold text-blue-400 uppercase"></span>
+        </div>
+        <button id="lightbox-close" type="button" aria-label="Close modal" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 flex items-center justify-center transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="relative bg-black flex items-center justify-center max-h-[70vh]">
+        <img id="lightbox-img" alt="" class="max-h-[70vh] w-auto object-contain" src="">
+        <button id="lightbox-prev" type="button" aria-label="Previous photo" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-slate-700 text-white flex items-center justify-center transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+        </button>
+        <button id="lightbox-next" type="button" aria-label="Next photo" class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-slate-700 text-white flex items-center justify-center transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        </button>
+      </div>
+      <div class="px-5 py-3.5 bg-slate-950 border-t border-slate-800">
+        <p id="lightbox-caption" class="text-sm text-white font-medium"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast-notification" role="status" aria-live="polite" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-[80] opacity-0 translate-y-4 pointer-events-none transition-all duration-300">
+    <div class="px-4 py-2.5 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-xs sm:text-sm font-semibold shadow-xl flex items-center gap-2 border border-slate-700 dark:border-slate-200">
+      <svg class="w-4 h-4 text-emerald-400 dark:text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+      </svg>
+      <span id="toast-text">Disalin!</span>
+    </div>
+  </div>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top" type="button" aria-label="Kembali ke atas" class="fixed bottom-6 right-6 z-50 w-11 h-11 rounded-xl bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 shadow-lg hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 flex items-center justify-center opacity-0 pointer-events-none translate-y-3 transition-all duration-300">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M5 15l7-7 7 7"></path>
+    </svg>
+  </button>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
